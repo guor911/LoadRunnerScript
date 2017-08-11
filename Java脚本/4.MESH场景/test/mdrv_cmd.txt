@@ -1,0 +1,1 @@
+-usr "C:\Users\guorui\Desktop\全场景测试\业控资料\全场景脚本\4.MESH场景\test\test.usr" -compile_only -out "C:\Users\guorui\Desktop\全场景测试\业控资料\全场景脚本\4.MESH场景\test\" -drv_log_file "C:\Users\guorui\Desktop\全场景测试\业控资料\全场景脚本\4.MESH场景\test\mdrv.log" -cfg "C:\Users\guorui\Desktop\全场景测试\业控资料\全场景脚本\4.MESH场景\test\default.cfg" -product_name vugen

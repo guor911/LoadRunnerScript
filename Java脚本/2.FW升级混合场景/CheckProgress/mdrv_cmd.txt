@@ -1,0 +1,1 @@
+-usr "C:\Users\guorui\Desktop\全场景测试\业控资料\全场景脚本\2.FW升级混合场景\CheckProgress\CheckProgress.usr" -compile_only -out "C:\Users\guorui\Desktop\全场景测试\业控资料\全场景脚本\2.FW升级混合场景\CheckProgress\" -drv_log_file "C:\Users\guorui\Desktop\全场景测试\业控资料\全场景脚本\2.FW升级混合场景\CheckProgress\mdrv.log" -cfg "C:\Users\guorui\Desktop\全场景测试\业控资料\全场景脚本\2.FW升级混合场景\CheckProgress\default.cfg" -product_name vugen

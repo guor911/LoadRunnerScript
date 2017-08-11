@@ -1,0 +1,2 @@
+[Hosts]
+localhost=C:\Users\guorui\Desktop\全场景测试\业控资料\全场景脚本\2.FW升级混合场景\FW升级混合场景\res\localhost_1.eve

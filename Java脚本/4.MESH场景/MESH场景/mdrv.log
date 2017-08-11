@@ -1,0 +1,64 @@
+Notify: Found jdk version: 1.6.0.
+Notify: classpath=C:\Users\guorui\Desktop\全场景测试\业控资料\全场景脚本\4.MESH场景\MESH场景\;d:\program files (x86)\hp\loadrunner\classes\srv;d:\program files (x86)\hp\loadrunner\classes;.;C:\Program Files (x86)\Java\jdk1.6.0_45\lib;C:\Program Files (x86)\Java\jdk1.6.0_45\lib\tools.jar;C:\Program Files (x86)\Java\jdk1.6.0_45\lib\dt.jar;C:\Users\guorui\Desktop\全场景测试\业控资料\全场景脚本\jarFile\commons-codec-1.10.jar;C:\Users\guorui\Desktop\全场景测试\业控资料\全场景脚本\jarFile\genKey.jar;;;;d:\program files (x86)\hp\loadrunner\lib\xstream-1.3.jar;d:\program files (x86)\hp\loadrunner\lib\xpp3-1.1.4c.jar
+Notify: Path=C:\Program Files (x86)\Java\jdk1.6.0_45\jre\bin\client;D:\PROGRA~3\HP\LOADRU~1\bin;D:\PROGRA~3\HP\LOADRU~1\bin\gecko;D:\PROGRA~3\HP\LOADRU~1\bin\tulip\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\strawberry\c\bin;C:\strawberry\perl\bin;D:\Program Files\TortoiseSVN\bin;C:\Program Files (x86)\Java\jdk1.6.0_45\bin;C:\Program Files (x86)\Java\jdk1.6.0_45\jre\bin;E:\Python\Python36;E:\Python\Python36\Scripts;E:\Python\Python27;E:\Python\Python27\Scripts;;;
+Notify: VM Params: .
+Virtual User Script started at : 2017-06-02 15:59:35
+Starting action vuser_init.
+Notify: Transaction "StartALL" started.
+web_disable_keep_alive was successful  	[MsgId: MMSG-26392]
+web_custom_request("startall_request") was successful, 85 body bytes, 195 header bytes  	[MsgId: MMSG-26386]
+Notify: Transaction "StartALL" ended with "Pass" status (Duration: 0.1283).
+Notify: Transaction "signin" started.
+web_disable_keep_alive was successful  	[MsgId: MMSG-26392]
+Registering web_reg_save_param was successful  	[MsgId: MMSG-26390]
+web_custom_request("signin.fam_request") was successful, 140 body bytes, 155 header bytes, 11 chunking overhead bytes  	[MsgId: MMSG-26385]
+Notify: Transaction "signin" ended with "Pass" status (Duration: 0.1447 Wasted Time: 0.0001).
+Success code:0
+Notify: Transaction "HU006" started.
+web_disable_keep_alive was successful  	[MsgId: MMSG-26392]
+Registering web_reg_save_param was successful  	[MsgId: MMSG-26390]
+Registering web_reg_save_param was successful  	[MsgId: MMSG-26390]
+Registering web_reg_save_param was successful  	[MsgId: MMSG-26390]
+web_custom_request("login.app_request") was successful, 261 body bytes, 155 header bytes, 12 chunking overhead bytes  	[MsgId: MMSG-26385]
+Notify: Transaction "HU006" ended with "Pass" status (Duration: 0.1465 Wasted Time: 0.0000).
+Success code:0
+System.out: 4686032414304226259                                                                                                                                                      Notify:
+Notify: Transaction "AE003" started.
+web_disable_keep_alive was successful  	[MsgId: MMSG-26392]
+Registering web_reg_save_param was successful  	[MsgId: MMSG-26390]
+Warning -26593: The header being added may cause unpredictable results when applied to all ensuing URLs. It is added anyway  	[MsgId: MWAR-26593]
+web_add_header("Authorization") highest severity level was "warning"  	[MsgId: MMSG-26391]
+web_custom_request("token.app_request") was successful, 163 body bytes, 254 header bytes, 11 chunking overhead bytes  	[MsgId: MMSG-26385]
+Notify: Transaction "AE003" ended with "Pass" status (Duration: 0.1365 Wasted Time: 0.0000).
+Success code:0
+Notify: Transaction "AU022" started.
+web_disable_keep_alive was successful  	[MsgId: MMSG-26392]
+Registering web_reg_save_param was successful  	[MsgId: MMSG-26390]
+Warning -26593: The header being added may cause unpredictable results when applied to all ensuing URLs. It is added anyway  	[MsgId: MWAR-26593]
+web_add_header("Authorization") highest severity level was "warning"  	[MsgId: MMSG-26391]
+web_custom_request("serverInfo.app_request") was successful, 650 body bytes, 254 header bytes, 12 chunking overhead bytes  	[MsgId: MMSG-26385]
+Notify: Transaction "AU022" ended with "Pass" status (Duration: 0.1517 Wasted Time: 0.0000).
+Success code:0
+Ending action vuser_init.
+Running Vuser...
+Starting iteration 1.
+Warning -27077: The "vuser_init" section contains web function(s) when the "Simulate a new user on each iteration" Run-Time Setting is ON.  This may produce unpredictable results with multiple iterations  	[MsgId: MWAR-27077]
+Starting action Actions.
+Notify: Transaction "MH020" started.
+web_disable_keep_alive was successful  	[MsgId: MMSG-26392]
+Registering web_reg_save_param was successful  	[MsgId: MMSG-26390]
+Warning -26593: The header being added may cause unpredictable results when applied to all ensuing URLs. It is added anyway  	[MsgId: MWAR-26593]
+web_add_header("Authorization") highest severity level was "warning"  	[MsgId: MMSG-26391]
+web_custom_request("removemesh.app_request") was successful, 162 body bytes, 254 header bytes, 11 chunking overhead bytes  	[MsgId: MMSG-26385]
+Notify: Transaction "MH020" ended with "Pass" status (Duration: 0.1439 Wasted Time: 0.0000).
+Success Code: 0
+Ending action Actions.
+Ending iteration 1.
+Ending Vuser...
+Starting action vuser_end.
+Notify: Transaction "StopALL" started.
+web_disable_keep_alive was successful  	[MsgId: MMSG-26392]
+web_custom_request("startall_request") was successful, 85 body bytes, 195 header bytes  	[MsgId: MMSG-26386]
+Notify: Transaction "StopALL" ended with "Pass" status (Duration: 0.1078).
+Ending action vuser_end.
+Vuser Terminated.

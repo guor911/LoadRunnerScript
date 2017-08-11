@@ -1,0 +1,32 @@
+[Scenario]
+Product=HP LoadRunner Controller
+Version=11.0.0.0
+Path=Scenario1
+Subject=
+Result_file=C:\Users\guorui\Desktop\全场景测试\业控资料\全场景脚本\2.FW升级混合场景\FW升级混合场景\res\res.lrr
+Description=
+ResultName=res
+Time_Zone=-28800
+Start_time=1495676804
+Daylight_Bias=0
+Stop_time=1495676992
+[Configuration]
+Public_local=1
+Is_mix=1
+Is_runner_file=0
+Runner_file=
+[Running_mode]
+Start_reason=By command
+Stop_reason=By a user
+[Data Collection]
+FullData=1
+[Scenario_summary]
+Scenario Type=Manual Scenario
+Goal Profile Name=Default Schedule
+Mode=Scenario Scheduling
+Scenario Duration=Until Completion
+Load Behavior=Property
+[Scripts]
+FW升级混合场景=C:\Users\guorui\Desktop\全场景测试\业控资料\全场景脚本\2.FW升级混合场景\FW升级混合场景\FW升级混合场景.usr
+[Scripts_types]
+FW升级混合场景=General-Java

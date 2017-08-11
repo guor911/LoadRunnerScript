@@ -1,0 +1,79 @@
+C:\Users\guorui\Desktop\全场景测试\业控资料\全场景脚本\3.告警事件场景\CheckReportAndPlay\Actions.java:155: 非法的表达式开始
+        private void getPlaybackUrlRequest(String evtid,String[] s){
+        ^
+C:\Users\guorui\Desktop\全场景测试\业控资料\全场景脚本\3.告警事件场景\CheckReportAndPlay\Actions.java:155: 非法的表达式开始
+        private void getPlaybackUrlRequest(String evtid,String[] s){
+                ^
+C:\Users\guorui\Desktop\全场景测试\业控资料\全场景脚本\3.告警事件场景\CheckReportAndPlay\Actions.java:155: 需要 ';'
+        private void getPlaybackUrlRequest(String evtid,String[] s){
+                                          ^
+C:\Users\guorui\Desktop\全场景测试\业控资料\全场景脚本\3.告警事件场景\CheckReportAndPlay\Actions.java:155: 需要 ';'
+        private void getPlaybackUrlRequest(String evtid,String[] s){
+                                                                ^
+C:\Users\guorui\Desktop\全场景测试\业控资料\全场景脚本\3.告警事件场景\CheckReportAndPlay\Actions.java:155: 不是语句
+        private void getPlaybackUrlRequest(String evtid,String[] s){
+                                                                 ^
+C:\Users\guorui\Desktop\全场景测试\业控资料\全场景脚本\3.告警事件场景\CheckReportAndPlay\Actions.java:155: 需要 ';'
+        private void getPlaybackUrlRequest(String evtid,String[] s){
+                                                                  ^
+C:\Users\guorui\Desktop\全场景测试\业控资料\全场景脚本\3.告警事件场景\CheckReportAndPlay\Actions.java:204: 非法的表达式开始
+	private void simuStartALL(){
+	^
+C:\Users\guorui\Desktop\全场景测试\业控资料\全场景脚本\3.告警事件场景\CheckReportAndPlay\Actions.java:204: 非法的表达式开始
+	private void simuStartALL(){
+	        ^
+C:\Users\guorui\Desktop\全场景测试\业控资料\全场景脚本\3.告警事件场景\CheckReportAndPlay\Actions.java:204: 需要 ';'
+	private void simuStartALL(){
+	                         ^
+C:\Users\guorui\Desktop\全场景测试\业控资料\全场景脚本\3.告警事件场景\CheckReportAndPlay\Actions.java:242: 非法的表达式开始
+	private void simuStopALL(){
+	^
+C:\Users\guorui\Desktop\全场景测试\业控资料\全场景脚本\3.告警事件场景\CheckReportAndPlay\Actions.java:242: 非法的表达式开始
+	private void simuStopALL(){
+	        ^
+C:\Users\guorui\Desktop\全场景测试\业控资料\全场景脚本\3.告警事件场景\CheckReportAndPlay\Actions.java:242: 需要 ';'
+	private void simuStopALL(){
+	                        ^
+C:\Users\guorui\Desktop\全场景测试\业控资料\全场景脚本\3.告警事件场景\CheckReportAndPlay\Actions.java:280: 非法的表达式开始
+	private void signinRequest(){
+	^
+C:\Users\guorui\Desktop\全场景测试\业控资料\全场景脚本\3.告警事件场景\CheckReportAndPlay\Actions.java:280: 非法的表达式开始
+	private void signinRequest(){
+	        ^
+C:\Users\guorui\Desktop\全场景测试\业控资料\全场景脚本\3.告警事件场景\CheckReportAndPlay\Actions.java:280: 需要 ';'
+	private void signinRequest(){
+	                          ^
+C:\Users\guorui\Desktop\全场景测试\业控资料\全场景脚本\3.告警事件场景\CheckReportAndPlay\Actions.java:328: 非法的表达式开始
+	private String[] login2BRequest(){
+	^
+C:\Users\guorui\Desktop\全场景测试\业控资料\全场景脚本\3.告警事件场景\CheckReportAndPlay\Actions.java:328: 需要 ';'
+	private String[] login2BRequest(){
+	                               ^
+C:\Users\guorui\Desktop\全场景测试\业控资料\全场景脚本\3.告警事件场景\CheckReportAndPlay\Actions.java:381: 非法的表达式开始
+	private void uploadTokenRequest(String[] s){
+	^
+C:\Users\guorui\Desktop\全场景测试\业控资料\全场景脚本\3.告警事件场景\CheckReportAndPlay\Actions.java:381: 非法的表达式开始
+	private void uploadTokenRequest(String[] s){
+	        ^
+C:\Users\guorui\Desktop\全场景测试\业控资料\全场景脚本\3.告警事件场景\CheckReportAndPlay\Actions.java:381: 需要 ';'
+	private void uploadTokenRequest(String[] s){
+	                               ^
+C:\Users\guorui\Desktop\全场景测试\业控资料\全场景脚本\3.告警事件场景\CheckReportAndPlay\Actions.java:381: 需要 ';'
+	private void uploadTokenRequest(String[] s){
+	                                          ^
+C:\Users\guorui\Desktop\全场景测试\业控资料\全场景脚本\3.告警事件场景\CheckReportAndPlay\Actions.java:429: 非法的表达式开始
+	private void serverInfoRequest(String[] s){
+	^
+C:\Users\guorui\Desktop\全场景测试\业控资料\全场景脚本\3.告警事件场景\CheckReportAndPlay\Actions.java:429: 非法的表达式开始
+	private void serverInfoRequest(String[] s){
+	        ^
+C:\Users\guorui\Desktop\全场景测试\业控资料\全场景脚本\3.告警事件场景\CheckReportAndPlay\Actions.java:429: 需要 ';'
+	private void serverInfoRequest(String[] s){
+	                              ^
+C:\Users\guorui\Desktop\全场景测试\业控资料\全场景脚本\3.告警事件场景\CheckReportAndPlay\Actions.java:429: 需要 ';'
+	private void serverInfoRequest(String[] s){
+	                                         ^
+C:\Users\guorui\Desktop\全场景测试\业控资料\全场景脚本\3.告警事件场景\CheckReportAndPlay\Actions.java:471: 进行语法解析时已到达文件结尾
+}
+ ^
+26 错误

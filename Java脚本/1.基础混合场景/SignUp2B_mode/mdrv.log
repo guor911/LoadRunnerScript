@@ -1,0 +1,22 @@
+Notify: Found jdk version: 1.6.0.
+Notify: classpath=C:\Users\guorui\Desktop\全场景测试\业控资料\全场景脚本\1.基础混合场景\SignUp2B_mode\;d:\program files (x86)\hp\loadrunner\classes\srv;d:\program files (x86)\hp\loadrunner\classes;.;C:\Program Files (x86)\Java\jdk1.6.0_45\lib;C:\Program Files (x86)\Java\jdk1.6.0_45\lib\tools.jar;C:\Program Files (x86)\Java\jdk1.6.0_45\lib\dt.jar;C:\Users\guorui\Desktop\全场景测试\业控资料\全场景脚本\jarFile\genKey.jar;;;;d:\program files (x86)\hp\loadrunner\lib\xstream-1.3.jar;d:\program files (x86)\hp\loadrunner\lib\xpp3-1.1.4c.jar
+Notify: Path=C:\Program Files (x86)\Java\jdk1.6.0_45\jre\bin\client;D:\PROGRA~3\HP\LOADRU~1\bin;D:\PROGRA~3\HP\LOADRU~1\bin\gecko;D:\PROGRA~3\HP\LOADRU~1\bin\tulip\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\strawberry\c\bin;C:\strawberry\perl\bin;D:\Program Files\TortoiseSVN\bin;C:\Program Files (x86)\Java\jdk1.6.0_45\bin;C:\Program Files (x86)\Java\jdk1.6.0_45\jre\bin;E:\Python\Python36\Scripts\;E:\Python\Python36\;
+Notify: VM Params: .
+Virtual User Script started at : 2017-05-11 16:55:15
+Starting action vuser_init.
+Ending action vuser_init.
+Running Vuser...
+Starting iteration 1.
+Starting action Actions.
+web_disable_keep_alive was successful  	[MsgId: MMSG-26392]
+Registering web_reg_save_param was successful  	[MsgId: MMSG-26390]
+Notify: Transaction "signup" started.
+web_custom_request("signup.fam_request") was successful, 140 body bytes, 155 header bytes, 11 chunking overhead bytes  	[MsgId: MMSG-26385]
+Notify: Transaction "signup" ended with "Pass" status (Duration: 0.2188 Wasted Time: 0.0000).
+Success code:0
+Ending action Actions.
+Ending iteration 1.
+Ending Vuser...
+Starting action vuser_end.
+Ending action vuser_end.
+Vuser Terminated.

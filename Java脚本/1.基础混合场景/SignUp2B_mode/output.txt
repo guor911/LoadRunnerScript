@@ -1,0 +1,18 @@
+Virtual User Script started at : 2017-05-11 16:55:15
+Starting action vuser_init.
+Ending action vuser_init.
+Running Vuser...
+Starting iteration 1.
+Starting action Actions.
+web_disable_keep_alive was successful  	[MsgId: MMSG-26392]
+Registering web_reg_save_param was successful  	[MsgId: MMSG-26390]
+Notify: Transaction "signup" started.
+web_custom_request("signup.fam_request") was successful, 140 body bytes, 155 header bytes, 11 chunking overhead bytes  	[MsgId: MMSG-26385]
+Notify: Transaction "signup" ended with "Pass" status (Duration: 0.2188 Wasted Time: 0.0000).
+Success code:0
+Ending action Actions.
+Ending iteration 1.
+Ending Vuser...
+Starting action vuser_end.
+Ending action vuser_end.
+Vuser Terminated.

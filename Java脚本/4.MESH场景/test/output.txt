@@ -1,0 +1,6 @@
+C:\Users\guorui\Desktop\全场景测试\业控资料\全场景脚本\4.MESH场景\test\Actions.java:20: 找不到符号
+符号： 变量 LAST
+位置： 类 Actions
+	    web.save_timestamp_param("time",LAST);
+	                                    ^
+1 错误

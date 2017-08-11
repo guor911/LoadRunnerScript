@@ -1,0 +1,17 @@
+[DATA_POINT]
+1="tcp_connect"
+2="tcp_connection_count"
+3="mic_recv"
+4="HTTP_200"
+5="tcp_shutdown"
+6="mic_pgs"
+[END_TRANSACTION]
+1="StartALL"
+2="signin"
+3="HU006"
+4="AE003"
+5="AU022"
+6="FW001"
+7="FW002"
+8="FW004"
+9="StopALL"

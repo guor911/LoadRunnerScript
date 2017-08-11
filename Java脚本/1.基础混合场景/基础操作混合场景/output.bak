@@ -1,0 +1,129 @@
+Virtual User Script started at : 2017-06-01 09:26:51
+Starting action vuser_init.
+Notify: Transaction "StartALL" started.
+web_disable_keep_alive was successful  	[MsgId: MMSG-26392]
+web_custom_request("startall_request") was successful, 85 body bytes, 195 header bytes  	[MsgId: MMSG-26386]
+Notify: Transaction "StartALL" ended with "Pass" status (Duration: 0.1283).
+Ending action vuser_init.
+Running Vuser...
+Starting iteration 1.
+Warning -27077: The "vuser_init" section contains web function(s) when the "Simulate a new user on each iteration" Run-Time Setting is ON.  This may produce unpredictable results with multiple iterations  	[MsgId: MWAR-27077]
+Starting action Actions.
+Notify: Transaction "signin" started.
+web_disable_keep_alive was successful  	[MsgId: MMSG-26392]
+Registering web_reg_save_param was successful  	[MsgId: MMSG-26390]
+web_custom_request("signin.fam_request") was successful, 140 body bytes, 155 header bytes, 11 chunking overhead bytes  	[MsgId: MMSG-26385]
+Notify: Transaction "signin" ended with "Pass" status (Duration: 0.1634 Wasted Time: 0.0000).
+Success code:0
+Notify: Transaction "HU006" started.
+web_disable_keep_alive was successful  	[MsgId: MMSG-26392]
+Registering web_reg_save_param was successful  	[MsgId: MMSG-26390]
+Registering web_reg_save_param was successful  	[MsgId: MMSG-26390]
+Registering web_reg_save_param was successful  	[MsgId: MMSG-26390]
+web_custom_request("login.app_request") was successful, 261 body bytes, 155 header bytes, 12 chunking overhead bytes  	[MsgId: MMSG-26385]
+Notify: Transaction "HU006" ended with "Pass" status (Duration: 0.1513 Wasted Time: 0.0000).
+Success code:0
+System.out: 4686032414304226259                                                                                                                                                      Notify:
+Notify: Transaction "AE003" started.
+web_disable_keep_alive was successful  	[MsgId: MMSG-26392]
+Registering web_reg_save_param was successful  	[MsgId: MMSG-26390]
+Warning -26593: The header being added may cause unpredictable results when applied to all ensuing URLs. It is added anyway  	[MsgId: MWAR-26593]
+web_add_header("Authorization") highest severity level was "warning"  	[MsgId: MMSG-26391]
+web_custom_request("token.app_request") was successful, 163 body bytes, 155 header bytes, 11 chunking overhead bytes  	[MsgId: MMSG-26385]
+Notify: Transaction "AE003" ended with "Pass" status (Duration: 0.1783 Wasted Time: 0.0000).
+Success code:0
+Notify: Transaction "AU022" started.
+web_disable_keep_alive was successful  	[MsgId: MMSG-26392]
+Registering web_reg_save_param was successful  	[MsgId: MMSG-26390]
+Warning -26593: The header being added may cause unpredictable results when applied to all ensuing URLs. It is added anyway  	[MsgId: MWAR-26593]
+web_add_header("Authorization") highest severity level was "warning"  	[MsgId: MMSG-26391]
+web_custom_request("serverInfo.app_request") was successful, 650 body bytes, 155 header bytes, 12 chunking overhead bytes  	[MsgId: MMSG-26385]
+Notify: Transaction "AU022" ended with "Pass" status (Duration: 0.1447 Wasted Time: 0.0000).
+Success code:0
+Notify: Transaction "AU008" started.
+web_disable_keep_alive was successful  	[MsgId: MMSG-26392]
+Registering web_reg_save_param was successful  	[MsgId: MMSG-26390]
+Warning -26593: The header being added may cause unpredictable results when applied to all ensuing URLs. It is added anyway  	[MsgId: MWAR-26593]
+web_add_header("Authorization") highest severity level was "warning"  	[MsgId: MMSG-26391]
+web_custom_request("query.app_request") was successful, 163 body bytes, 155 header bytes, 11 chunking overhead bytes  	[MsgId: MMSG-26385]
+Notify: Transaction "AU008" ended with "Pass" status (Duration: 0.1594 Wasted Time: 0.0000).
+Success code:0
+Notify: Transaction "AU023" started.
+web_disable_keep_alive was successful  	[MsgId: MMSG-26392]
+Warning -26593: The header being added may cause unpredictable results when applied to all ensuing URLs. It is added anyway  	[MsgId: MWAR-26593]
+web_add_header("Authorization") highest severity level was "warning"  	[MsgId: MMSG-26391]
+Registering web_reg_save_param was successful  	[MsgId: MMSG-26390]
+Registering web_reg_save_param was successful  	[MsgId: MMSG-26390]
+HTML parsing not performed for Content-Type "application/xml" ("ParseHtmlContentType" Run-Time Setting is "TEXT"). URL="http://192.168.139.206:8080/sklcloud/app/device/AAAAAAAA/ownedByOther"  	[MsgId: MMSG-26548]
+web_custom_request("ownedByOther_request") was successful, 226 body bytes, 2082 header bytes  	[MsgId: MMSG-26386]
+Notify: Transaction "AU023" ended with "Pass" status (Duration: 0.1768 Wasted Time: 0.0000).
+Success code: 0
+isOwnedByOther: 0
+Notify: Transaction "AU010" started.
+web_disable_keep_alive was successful  	[MsgId: MMSG-26392]
+Registering web_reg_save_param was successful  	[MsgId: MMSG-26390]
+Registering web_reg_save_param was successful  	[MsgId: MMSG-26390]
+Warning -26593: The header being added may cause unpredictable results when applied to all ensuing URLs. It is added anyway  	[MsgId: MWAR-26593]
+web_add_header("Authorization") highest severity level was "warning"  	[MsgId: MMSG-26391]
+web_custom_request("isLiveDevice.app_request") was successful, 212 body bytes, 155 header bytes, 11 chunking overhead bytes  	[MsgId: MMSG-26385]
+Notify: Transaction "AU010" ended with "Pass" status (Duration: 0.1485 Wasted Time: 0.0000).
+Success code: 0
+Live Or Not: true
+Notify: Transaction "AS018" started.
+web_disable_keep_alive was successful  	[MsgId: MMSG-26392]
+Registering web_reg_save_param was successful  	[MsgId: MMSG-26390]
+Warning -26593: The header being added may cause unpredictable results when applied to all ensuing URLs. It is added anyway  	[MsgId: MWAR-26593]
+web_add_header("Authorization") highest severity level was "warning"  	[MsgId: MMSG-26391]
+web_custom_request("factoryReset.app_request") was successful, 162 body bytes, 155 header bytes, 11 chunking overhead bytes  	[MsgId: MMSG-26385]
+Notify: Transaction "AS018" ended with "Pass" status (Duration: 0.1575 Wasted Time: 0.0000).
+Success code:0
+Notify: Transaction "AU011" started.
+web_disable_keep_alive was successful  	[MsgId: MMSG-26392]
+Registering web_reg_save_param was successful  	[MsgId: MMSG-26390]
+Warning -26593: The header being added may cause unpredictable results when applied to all ensuing URLs. It is added anyway  	[MsgId: MWAR-26593]
+web_add_header("Authorization") highest severity level was "warning"  	[MsgId: MMSG-26391]
+web_custom_request("deviceLink.app_request") was successful, 195 body bytes, 130 header bytes, 11 chunking overhead bytes  	[MsgId: MMSG-26385]
+Notify: Transaction "AU011" ended with "Fail" status (Duration: 0.1648 Wasted Time: 0.0000).
+Error: Error Code:0x50020204
+Notify: Transaction "SS006" started.
+web_disable_keep_alive was successful  	[MsgId: MMSG-26392]
+Registering web_reg_save_param was successful  	[MsgId: MMSG-26390]
+Warning -26593: The header being added may cause unpredictable results when applied to all ensuing URLs. It is added anyway  	[MsgId: MWAR-26593]
+web_add_header("Authorization") highest severity level was "warning"  	[MsgId: MMSG-26391]
+web_custom_request("device_share.fam_request") was successful, 187 body bytes, 130 header bytes, 11 chunking overhead bytes  	[MsgId: MMSG-26385]
+Notify: Transaction "SS006" ended with "Fail" status (Duration: 0.1859 Wasted Time: 0.0000).
+Error: Error Code:301
+Notify: Transaction "AU019" started.
+web_disable_keep_alive was successful  	[MsgId: MMSG-26392]
+Registering web_reg_save_param was successful  	[MsgId: MMSG-26390]
+Warning -26593: The header being added may cause unpredictable results when applied to all ensuing URLs. It is added anyway  	[MsgId: MWAR-26593]
+web_add_header("Authorization") highest severity level was "warning"  	[MsgId: MMSG-26391]
+web_custom_request("query.app_request") was successful, 234 body bytes, 130 header bytes, 11 chunking overhead bytes  	[MsgId: MMSG-26385]
+Notify: Transaction "AU019" ended with "Fail" status (Duration: 0.1380 Wasted Time: 0.0000).
+Error: Error Code:0x50002002
+Notify: Transaction "AS001" started.
+web_disable_keep_alive was successful  	[MsgId: MMSG-26392]
+Registering web_reg_save_param was successful  	[MsgId: MMSG-26390]
+Warning -26593: The header being added may cause unpredictable results when applied to all ensuing URLs. It is added anyway  	[MsgId: MWAR-26593]
+web_add_header("Authorization") highest severity level was "warning"  	[MsgId: MMSG-26391]
+web_custom_request("motionSensitivity.app_request") was successful, 204 body bytes, 130 header bytes, 11 chunking overhead bytes  	[MsgId: MMSG-26385]
+Notify: Transaction "AS001" ended with "Fail" status (Duration: 0.1469 Wasted Time: 0.0000).
+Error: Error Code:0x50020005
+Notify: Transaction "AS015" started.
+web_disable_keep_alive was successful  	[MsgId: MMSG-26392]
+Registering web_reg_save_param was successful  	[MsgId: MMSG-26390]
+Warning -26593: The header being added may cause unpredictable results when applied to all ensuing URLs. It is added anyway  	[MsgId: MWAR-26593]
+web_add_header("Authorization") highest severity level was "warning"  	[MsgId: MMSG-26391]
+Error -26628: HTTP Status-Code=403 (Forbidden) for "http://192.168.139.206:8080/sklcloud/appremote/AAAAAAAA/device/doorOpenedRemind"  	[MsgId: MERR-26628]
+Error -26377: No match found for the requested parameter "codec". Check whether the requested boundaries exist in the response data. Also, if the data you want to save exceeds 256 bytes, use web_set_max_html_param_len to increase the parameter size  	[MsgId: MERR-26377]
+web_custom_request("doorOpenedRemind_request") highest severity level was "ERROR", 16 body bytes, 228 header bytes  	[MsgId: MMSG-26388]
+Notify: Transaction "AS015" ended with "Fail" status (Duration: 0.1385 Wasted Time: 0.0000).
+Abort was called from an action.
+Ending Vuser...
+Starting action vuser_end.
+Notify: Transaction "StopALL" started.
+web_disable_keep_alive was successful  	[MsgId: MMSG-26392]
+web_custom_request("startall_request") was successful, 85 body bytes, 195 header bytes  	[MsgId: MMSG-26386]
+Notify: Transaction "StopALL" ended with "Pass" status (Duration: 0.1086).
+Ending action vuser_end.
+Vuser Terminated.

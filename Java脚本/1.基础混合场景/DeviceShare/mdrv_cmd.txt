@@ -1,0 +1,1 @@
+-usr "C:\Users\guorui\Desktop\全场景测试\业控资料\测试场景1_脚本\全场景脚本\DeviceShare\DeviceShare.usr" -compile_only -out "C:\Users\guorui\Desktop\全场景测试\业控资料\测试场景1_脚本\全场景脚本\DeviceShare\" -drv_log_file "C:\Users\guorui\Desktop\全场景测试\业控资料\测试场景1_脚本\全场景脚本\DeviceShare\mdrv.log" -cfg "C:\Users\guorui\Desktop\全场景测试\业控资料\测试场景1_脚本\全场景脚本\DeviceShare\default.cfg" -product_name vugen

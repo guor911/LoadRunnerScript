@@ -1,0 +1,472 @@
+/*
+ * LoadRunner Java script. (Build: _build_number_)
+ * 
+ * Script Description: 
+ * APP Check Event Report And Play
+ */
+
+import lrapi.lr;
+import lrapi.web;
+import test.*;
+
+public class Actions
+{
+	String[] s;
+	public int init() throws Throwable {
+	    lr.save_string("192.168.139.208","BLCIP");
+	    lr.save_string("192.168.139.207","IPCSIMIP");
+	    //IPC Online
+	    simuStartALL();
+	    lr.think_time(2);
+	    // APP Login
+	    signinRequest();			// SS001	# sign in to b mode
+	    s = login2BRequest();		// HU006	# login to cloud
+	    uploadTokenRequest(s);		// AE003	# upload token
+	    serverInfoRequest(s);		// AU022	# APP请求获取P2P/UPNP/STUN/指令中心信息
+	    return 0;
+	}//end of init
+
+	public int action() throws Throwable {
+	    String evtid;
+	    evtid = checkEventRequest(s);	// ET005	# APP用户向云端发送请求查询上报事件（告警）信息
+            getGifUrlRequest(evtid,s);		// ET006	# APP获取事件详细信息后请求Gif图像的URL，ID为每个事件记录唯一标识
+            getPlaybackUrlRequest(evtid,s);	// ET007	# APP获取事件详细信息后请求事件点播的URL，ID为每个事件记录唯一标识
+	    return 0;
+	}//end of action
+
+
+	public int end() throws Throwable {
+	    lr.think_time(10);
+	    simuStopALL();
+	    return 0;
+	}//end of end
+
+	private String checkEventRequest(String[] s){
+	    /*
+	     *	1. 带有beginTime和endTime表示查询该时间段内的事件信息，默认从当前开始按页返回；
+	     *	2. 带qId时表示查询user名下本台IPC的事件，不带qId默认查询用户名下所有的IPC事件消息（包括分享到的设备）；
+	     *	3. 标识为delete的事件不返回；
+	     */
+	    String xmlBody,code;
+	    lr.save_string(s[0],"userid");
+	    lr.save_string(s[1],"pwd");
+	    lr.save_string("/sklcloud/app/event/eventAlertList.app","uri");//ID为每个事件记录唯一标识
+	    lr.save_string("POST","method");
+	    xmlBody = "Body=<eventAlertList version=\"1.0\" xmlns=\"urn:skylight\">"
+                    + "\r\n<userId><userid></userId>"
+                    + "\r\n<qId><qid></qId>"
+                    + "\r\n<startTime></startTime>"
+                    + "\r\n<endTime></endTime>"
+                    + "\r\n<pageNo>1</pageNo>"
+                    + "\r\n<perPageCount>10</perPageCount>"
+                    + "\r\n</eventAlertList>\r\n";
+	    lr.save_string(xmlBody,"xmlbody");
+	    try {
+		lr.save_string(DigestUtil.genDigist("<pwd>","<userid>","<pwd>","<method>","<uri>"),"resp");
+	    } catch ( Exception err ) {
+		lr.message("An exception occurred: " + err.toString());
+	    }
+	    lr.start_transaction("ET005");
+	    try{
+		web.disable_keep_alive (); 
+		web.reg_save_param("codec",new String[]{"LB=<statusCode>","RB=</statusCode>","LAST"});
+		web.reg_save_param("evtid",new String[]{"LB=<eventId>","RB=</eventId>","LAST"});
+		web.add_header("Authorization","Digest userId=<userid>,response=<resp>");//digest
+		web.custom_request("eventAlertList.app_request",
+    		"Method=<method>",
+		new String[]{
+		    "URL=http://<BLCIP>:8080<uri>",
+		    "TargetFrame=",
+		    "Resource=0",
+		    "Referer=",
+		    xmlBody,
+		    "LAST"});
+	    }
+            catch (Exception e) {
+		lr.end_transaction("ET005",lr.FAIL);
+		lr.message("An exception occurred: " + e.toString()); 
+	    }
+	    code = lr.eval_string("<codec>");
+	    if (code.equals("0")) {
+		lr.end_transaction("ET005",lr.PASS);
+		lr.output_message("Success code:" + code);
+		return lr.eval_string("<evtid>");
+	    }
+	    else{
+		lr.end_transaction("ET005",lr.FAIL);
+                lr.error_message("Error Code:" + code);
+		return null;
+	    }
+	}//ET005(POST)
+
+        private void getGifUrlRequest(String evtid,String[] s){
+	    /*
+	     *	请求时，云端会将图片和GIF的URL同时返回，没有URL时返回值为NULL
+             */
+	    String xmlBody,code,gurl;
+	    lr.save_string(evtid,"eventid");
+	    lr.save_string(s[0],"userid");
+	    lr.save_string(s[1],"pwd");
+	    lr.save_string("/sklcloud/app/event/<eventid>/getGifUrl.app","uri");//ID为每个事件记录唯一标识
+	    lr.save_string("GET","method");
+	    xmlBody = "Body=";
+	    lr.save_string(xmlBody,"xmlbody");
+	    try {
+		lr.save_string(DigestUtil.genDigist("<pwd>","<userid>","<pwd>","<method>","<uri>"),"resp");
+	    } catch ( Exception err ) {
+		lr.message("An exception occurred: " + err.toString());
+	    }
+	    lr.start_transaction("ET006");
+	    try{
+		web.disable_keep_alive (); 
+		web.reg_save_param("codec",new String[]{"LB=<statusCode>","RB=</statusCode>","LAST"});
+		web.reg_save_param("gifurl",new String[]{"LB=<gifUrl>","RB=</gifUrl>","LAST"});
+		web.add_header("Authorization","Digest userId=<userid>,response=<resp>");//digest
+		web.custom_request("getGifUrl.app_request",
+    		"Method=<method>",
+		new String[]{
+		    "URL=http://<BLCIP>:8080<uri>",
+		    "TargetFrame=",
+		    "Resource=0",
+		    "Referer=",
+		    xmlBody,
+		    "LAST"});
+	    }
+            catch (Exception e) {
+		lr.end_transaction("ET006",lr.FAIL);
+		lr.message("An exception occurred: " + e.toString()); 
+	    }
+	    code = lr.eval_string("<codec>");
+	    if (code.equals("0")) {
+		gurl = lr.eval_string("<gifurl>");
+		if (gurl != null && gurl.length() != 0) {
+		    lr.end_transaction("ET007",lr.PASS);
+		    lr.output_message("Success code:" + code);
+		    lr.output_message("GifUrl is: " + gurl);
+		lr.end_transaction("ET006",lr.PASS);
+		lr.output_message("Success code:" + code);
+		}
+	    }
+	    else{
+		lr.end_transaction("ET006",lr.FAIL);
+                lr.error_message("Error Code:" + code);
+	    }
+	}//ET006(GET)
+
+        private void getPlaybackUrlRequest(String evtid,String[] s){
+	    String xmlBody,code,purl;
+	    lr.save_string(evtid,"eventid");
+	    lr.save_string(s[0],"userid");
+	    lr.save_string(s[1],"pwd");
+	    lr.save_string("/sklcloud/app/event/<eventid>/getPlaybackUrl.app","uri");//ID为每个事件记录唯一标识
+	    lr.save_string("GET","method");
+	    xmlBody = "Body=";
+	    lr.save_string(xmlBody,"xmlbody");
+	    try {
+		lr.save_string(DigestUtil.genDigist("<pwd>","<userid>","<pwd>","<method>","<uri>"),"resp");
+	    } catch ( Exception err ) {
+		lr.message("An exception occurred: " + err.toString());
+	    }
+	    lr.start_transaction("ET007");
+	    try{
+		web.disable_keep_alive (); 
+		web.reg_save_param("codec",new String[]{"LB=<statusCode>","RB=</statusCode>","LAST"});
+		web.reg_save_param("playurl",new String[]{"LB=<playbackUrl>","RB=</playbackUrl>","LAST"});
+		web.add_header("Authorization","Digest userId=<userid>,response=<resp>");//digest
+		web.custom_request("getPlaybackUrl.app_request",
+    		"Method=<method>",
+		new String[]{
+		    "URL=http://<BLCIP>:8080<uri>",
+		    "TargetFrame=",
+		    "Resource=0",
+		    "Referer=",
+		    xmlBody,
+		    "LAST"});
+	    }
+            catch (Exception e) {
+		lr.end_transaction("ET007",lr.FAIL);
+		lr.message("An exception occurred: " + e.toString()); 
+	    }
+	    code = lr.eval_string("<codec>");
+	    if (code.equals("0")) {
+		purl = lr.eval_string("<playurl>");
+		if (purl != null && purl.length() != 0) {
+		    lr.end_transaction("ET007",lr.PASS);
+		    lr.output_message("Success code:" + code);
+		    lr.output_message("PlayUrl is: " + purl);
+		}
+	    }
+	    else{
+		lr.end_transaction("ET007",lr.FAIL);
+                lr.error_message("Error Code:" + code);
+	    }
+	}//ET007(GET)
+
+	private void simuStartALL(){
+	    String xmlBody,code;
+	    xmlBody = "Body=";
+	    lr.save_string(xmlBody,"xmlbody");
+	    lr.save_string("/ipc/startAll","uri");
+	    lr.save_string("GET","method");
+	    lr.start_transaction("StartALL");
+	    try{
+		web.disable_keep_alive (); 
+		//web.reg_save_param("codec",new String[]{"LB=<statusCode>","RB=</statusCode>","LAST"});
+		web.custom_request("startall_request",
+				    "Method=<method>",
+				     new String[]{
+					"URL=http://<IPCSIMIP>:3000<uri>",//ID:云端用户ID
+					"TargetFrame=",
+					"Resource=0",
+					"Referer=",
+					xmlBody,
+					"LAST"});
+	    }
+	    catch (Exception e) {
+		lr.end_transaction("StartALL",lr.FAIL);
+		lr.message("An exception occurred: " + e.toString()); 
+	    }
+	    lr.end_transaction("StartALL",lr.AUTO);
+	    /*
+	    code = lr.eval_string("<codec>");
+	    if (code.equals("0")) {
+		lr.end_transaction("AU022",lr.PASS);
+		lr.output_message("Success code:" + code);
+	    }
+	    else{
+		lr.end_transaction("AU022",lr.FAIL);
+		lr.error_message("Error Code:" + code);
+	    }
+	    */
+	}//startall(get)
+
+	private void simuStopALL(){
+	    String xmlBody,code;
+	    xmlBody = "Body=";
+	    lr.save_string(xmlBody,"xmlbody");
+	    lr.save_string("/ipc/stopAll","uri");
+	    lr.save_string("GET","method");
+	    lr.start_transaction("StopALL");
+	    try{
+		web.disable_keep_alive (); 
+		//web.reg_save_param("codec",new String[]{"LB=<statusCode>","RB=</statusCode>","LAST"});
+		web.custom_request("startall_request",
+				    "Method=<method>",
+				    new String[]{
+					"URL=http://<IPCSIMIP>:3000<uri>",//ID:云端用户ID
+					"TargetFrame=",
+					"Resource=0",
+					"Referer=",
+					xmlBody,
+					"LAST"});
+	    }
+	    catch (Exception e) {
+		lr.end_transaction("StopALL",lr.FAIL);
+		lr.message("An exception occurred: " + e.toString()); 
+	    }
+	    lr.end_transaction("StopALL",lr.AUTO);
+	    /*
+	    code = lr.eval_string("<codec>");
+	    if (code.equals("0")) {
+		lr.end_transaction("StopALL",lr.PASS);
+		lr.output_message("Success code:" + code);
+	    }
+	    else{
+		lr.end_transaction("StopALL",lr.FAIL);
+		lr.error_message("Error Code:" + code);
+	    }
+	    */
+	}//stopall(get)
+
+	private void signinRequest(){
+	    String xmlBody,code;
+	    try {
+		lr.save_string(HashUtil.getEncCheckSum("SIGNIN_PRIVATE_KEY_QMULUX","<userID>","<compID>"),"checks");
+	    } catch ( Exception err ) {
+		lr.message("An exception occurred: " + err.toString());
+	    }
+	    xmlBody = "Body=<?xml version=\"1.0\"?>"
+		    + "\r\n<request>"
+		    + "\r\n<userId><userID></userId>"//customer_user_id
+		    + "\r\n<appModel><appM></appModel>"
+		    + "\r\n<companyId><compID></companyId>"
+		    + "\r\n<user_random><userrand></user_random>"//需要增加16位字母+数字的随机数
+		    + "\r\n<checksum><checks></checksum>"
+		    + "\r\n</request>\r\n";
+	    lr.save_string(xmlBody,"xmlbody");
+	    //System.out.println(xmlBody); 
+
+	    lr.start_transaction("signin");
+	    try{
+		web.disable_keep_alive (); 
+		web.reg_save_param("codec",new String[]{"LB=<code>","RB=</code>","LAST"});
+		web.custom_request("signin.fam_request",
+				   "Method=POST",
+				    new String[]{
+					"URL=http://<BLCIP>:8080/sklcloud/webservices/fam/account/signin.fam",
+					"TargetFrame=",
+					"Resource=0",
+					"Referer=",
+					xmlBody,
+					"LAST"});
+	    }
+            catch (Exception e) {
+		lr.end_transaction("signin",lr.FAIL);
+		lr.message("An exception occurred: " + e.toString()); 
+	    }
+	    //lr.log_message(lr.eval_string("<codec>"));
+	    code = lr.eval_string("<codec>");
+	    if (code.equals("0")) {
+		lr.end_transaction("signin",lr.PASS);
+		lr.output_message("Success code:" + code);
+	    }
+	    else{
+		lr.end_transaction("signin",lr.FAIL);
+                lr.error_message("Error Code:" + code);
+	    }
+	}//SS001(post)
+
+	private String[] login2BRequest(){
+	    String xmlBody,code;
+	    String[] s = new String[2];
+	    try {
+		lr.save_string(AESUtil.getEncrypt(lr.eval_string("<userrand>")),"encodestr");
+	    } catch ( Exception err ) {
+		System.out.println(err.toString());
+	    }
+	    
+	    xmlBody = "Body=<appUserLogin version=\"1.0\" xmlns=\"urn:skylight\">"
+		    + "\r\n<clientUserId><userID></clientUserId>"//管理平台用户IDcustomer_user_id
+		    + "\r\n<companyId><compID></companyId>"
+		    + "\r\n<appModel><appM></appModel>"
+		    + "\r\n<encodeClientRandom><encodestr></encodeClientRandom>"
+		    + "\r\n</appUserLogin>";
+	    lr.save_string(xmlBody,"xmlbody");
+	    //System.out.println(xmlBody); 
+	    lr.start_transaction("HU006");
+	    try{
+		web.disable_keep_alive (); 
+		web.reg_save_param("codec",new String[]{"LB=<statusCode>","RB=</statusCode>","LAST"});
+		web.reg_save_param("usrid",new String[]{"LB=<userId>","RB=</userId>","LAST"});
+		web.reg_save_param("pwd",new String[]{"LB=<random>","RB=</random>","LAST"});
+		web.custom_request("login.app_request",
+				    "Method=POST",
+				    new String[]{
+					"URL=http://<BLCIP>:8080/sklcloud/app/Security/AAA/users/server/login.app",
+					"TargetFrame=",
+					"Resource=0",
+					"Referer=",
+					xmlBody,
+					"LAST"});
+	    }
+            catch (Exception e) {
+		lr.end_transaction("HU006",lr.FAIL);
+		lr.message("An exception occurred: " + e.toString()); 
+	    }
+	    //lr.log_message(lr.eval_string("<codec>"));
+	    code = lr.eval_string("<codec>");
+	    if (code.equals("0")) {
+		lr.end_transaction("HU006",lr.PASS);
+		lr.output_message("Success code:" + code);
+		s[0] = lr.eval_string("<usrid>");
+		s[1] = lr.eval_string("<pwd>");
+		return s;
+	    }
+	    else{
+		lr.end_transaction("HU006",lr.FAIL);
+                lr.error_message("Error Code:" + code);
+		return null;
+	    }
+	}//HU006(post)
+
+	private void uploadTokenRequest(String[] s){
+	    String xmlBody,code;
+	    System.out.println(s[0]);
+	    lr.save_string(s[0],"userid");
+	    lr.save_string(s[1],"pwd");
+	    xmlBody = "Body=<token version=\"1.0\" xmlns=\"urn:skylight\">"
+		    + "\r\n<userId><userid></userId>"//云端用户ID(查询数据库)
+		    + "\r\n<pushToken>561b1902e6fff0a1f81df04d7af7f8548eef7ab84f9a12d1c34644f5b8fb5462</pushToken>"//IOS: 561b1902e6fff0a1f81df04d7af7f8548eef7ab84f9a12d1c34644f5b8fb5462 ||Android:
+		    + "\r\n<systemType>ios</systemType>"
+		    + "\r\n</token>";
+	    lr.save_string(xmlBody,"xmlbody");
+	    lr.save_string("/sklcloud/app/Security/AAA/users/token.app","uri");
+	    lr.save_string("PUT","method");
+	    try {
+		lr.save_string(DigestUtil.genDigist("<pwd>","<userid>","<pwd>","<method>","<uri>"),"resp");
+	    } catch ( Exception err ) {
+		lr.message("An exception occurred: " + err.toString());
+	    }
+	    lr.start_transaction("AE003");
+	    try{
+		web.disable_keep_alive (); 
+		web.reg_save_param("codec",new String[]{"LB=<statusCode>","RB=</statusCode>","LAST"});
+		web.add_header("Authorization","Digest userId=<userid>,response=<resp>");//digest 
+		web.custom_request("token.app_request",
+				    "Method=<method>",
+				    new String[]{
+					"URL=http://<BLCIP>:8080<uri>",
+					"TargetFrame=",
+					"Resource=0",
+					"Referer=",
+					xmlBody,
+					"LAST"});
+	    }
+            catch (Exception e) {
+		lr.end_transaction("AE003",lr.FAIL);
+		lr.message("An exception occurred: " + e.toString()); 
+	    }
+	    code = lr.eval_string("<codec>");
+	    if (code.equals("0")) {
+		lr.end_transaction("AE003",lr.PASS);
+		lr.output_message("Success code:" + code);
+	    }
+	    else{
+		lr.end_transaction("AE003",lr.FAIL);
+                lr.error_message("Error Code:" + code);
+	    }
+	}//AE003(put)
+
+	private void serverInfoRequest(String[] s){
+	    String xmlBody,code;
+	    xmlBody = "Body=";
+	    lr.save_string(xmlBody,"xmlbody");
+	    lr.save_string(s[0],"userid");
+	    lr.save_string(s[1],"pwd");
+	    lr.save_string("/sklcloud/app/<userid>/serverInfo.app","uri");
+	    lr.save_string("GET","method");
+	    try {
+		lr.save_string(DigestUtil.genDigist("<pwd>","<userid>","<pwd>","<method>","<uri>"),"resp");
+	    } catch ( Exception err ) {
+		lr.message("An exception occurred: " + err.toString());
+	    }
+	    lr.start_transaction("AU022");
+	    try{
+		web.disable_keep_alive (); 
+		web.reg_save_param("codec",new String[]{"LB=<statusCode>","RB=</statusCode>","LAST"});
+		web.add_header("Authorization","Digest userId=<userid>,response=<resp>");//digest
+		web.custom_request("serverInfo.app_request",
+				    "Method=GET",
+				    new String[]{
+					"URL=http://<BLCIP>:8080/sklcloud/app/<userid>/serverInfo.app",//ID:云端用户ID
+					"TargetFrame=",
+					"Resource=0",
+					"Referer=",
+					xmlBody,
+					"LAST"});
+	    }
+            catch (Exception e) {
+		lr.end_transaction("AU022",lr.FAIL);
+		lr.message("An exception occurred: " + e.toString()); 
+	    }
+	    code = lr.eval_string("<codec>");
+	    if (code.equals("0")) {
+		lr.end_transaction("AU022",lr.PASS);
+		lr.output_message("Success code:" + code);
+	    }
+	    else{
+		lr.end_transaction("AU022",lr.FAIL);
+                lr.error_message("Error Code:" + code);
+	    }
+	}//AU022(get)
+}

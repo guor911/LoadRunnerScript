@@ -1,0 +1,1 @@
+-usr "C:\Users\guorui\Desktop\全场景测试\业控资料\全场景脚本\1.基础混合场景\BindIPC\BindIPC.usr" -compile_only -out "C:\Users\guorui\Desktop\全场景测试\业控资料\全场景脚本\1.基础混合场景\BindIPC\" -drv_log_file "C:\Users\guorui\Desktop\全场景测试\业控资料\全场景脚本\1.基础混合场景\BindIPC\mdrv.log" -cfg "C:\Users\guorui\Desktop\全场景测试\业控资料\全场景脚本\1.基础混合场景\BindIPC\default.cfg" -product_name vugen

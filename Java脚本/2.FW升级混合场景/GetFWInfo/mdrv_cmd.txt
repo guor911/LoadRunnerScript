@@ -1,0 +1,1 @@
+-usr "C:\Users\guorui\Desktop\全场景测试\业控资料\全场景脚本\2.FW升级混合场景\GetFWInfo\GetFWInfo.usr" -compile_only -out "C:\Users\guorui\Desktop\全场景测试\业控资料\全场景脚本\2.FW升级混合场景\GetFWInfo\" -drv_log_file "C:\Users\guorui\Desktop\全场景测试\业控资料\全场景脚本\2.FW升级混合场景\GetFWInfo\mdrv.log" -cfg "C:\Users\guorui\Desktop\全场景测试\业控资料\全场景脚本\2.FW升级混合场景\GetFWInfo\default.cfg" -product_name vugen

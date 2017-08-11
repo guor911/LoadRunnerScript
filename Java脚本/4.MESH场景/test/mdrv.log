@@ -1,0 +1,5 @@
+Notify: Found jdk version: 1.6.0.	[MsgId: MMSG-22986]
+Notify: classpath=C:\Users\guorui\Desktop\全场景测试\业控资料\全场景脚本\4.MESH场景\test\;d:\program files (x86)\hp\loadrunner\classes\srv;d:\program files (x86)\hp\loadrunner\classes;;.;C:\Program Files (x86)\Java\jdk1.6.0_45\lib;C:\Program Files (x86)\Java\jdk1.6.0_45\lib\tools.jar;C:\Program Files (x86)\Java\jdk1.6.0_45\lib\dt.jar;;;d:\program files (x86)\hp\loadrunner\lib\xstream-1.3.jar;d:\program files (x86)\hp\loadrunner\lib\xpp3-1.1.4c.jar	[MsgId: MMSG-22986]
+Error: Compilation process failed.	[MsgId: MERR-22997]
+Warning: Extension java_int.dll reports error -1 on call to function ExtPerProcessInitialize	[MsgId: MWAR-10485]
+Error: Thread Context: Call to service of the driver failed, reason - thread context wasn't initialized on this thread.	[MsgId: MERR-10176]
