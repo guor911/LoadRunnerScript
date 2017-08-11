@@ -1,0 +1,9 @@
+-+
+-DCCI
+-D_IDA_XL
+-DWINNT
+-ID:\1. 项目\3.Cloud云项目\云性能\LR云性能脚本\setStreamConfig
+-IC:\Program Files\HP\LoadRunner\include
+-ed:\1. 项目\3.cloud云项目\云性能\lr云性能脚本\setstreamconfig\\logfile.log
+d:\1. 项目\3.cloud云项目\云性能\lr云性能脚本\setstreamconfig\\combined_setStreamConfig.c
+d:\1. 项目\3.cloud云项目\云性能\lr云性能脚本\setstreamconfig\\pre_cci.c

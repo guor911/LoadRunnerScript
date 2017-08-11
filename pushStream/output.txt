@@ -1,0 +1,16 @@
+Virtual User Script started at : 2016-11-30 14:48:36
+Starting action vuser_init.
+Ending action vuser_init.
+Running Vuser...
+Starting iteration 1.
+Starting action Action.
+Action.c(4): Notify: Transaction "get11" started.
+Action.c(5): web_disable_keep_alive was successful  	[MsgId: MMSG-26392]
+Action.c(8): web_custom_request("get110") was successful, 283 body bytes, 85 header bytes  	[MsgId: MMSG-26386]
+Action.c(37): Notify: Transaction "get11" ended with "Pass" status (Duration: 0.9140 Wasted Time: 0.7637).
+Ending action Action.
+Ending iteration 1.
+Ending Vuser...
+Starting action vuser_end.
+Ending action vuser_end.
+Vuser Terminated.

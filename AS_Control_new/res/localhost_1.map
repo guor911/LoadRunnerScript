@@ -1,0 +1,11 @@
+[DATA_POINT]
+1="HTTP_200"
+2="tcp_connection_count"
+3="tcp_connect"
+4="mic_recv"
+5="tcp_shutdown"
+[END_TRANSACTION]
+1="AS"
+2="AS_Stop"
+3="http://192.168.139.206:8091/skl-cloud/cloud/stream/control"
+4="AS_Action_4"

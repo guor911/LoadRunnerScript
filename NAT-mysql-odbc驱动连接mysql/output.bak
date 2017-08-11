@@ -1,0 +1,23 @@
+Virtual User Script started at : 2016-09-30 16:41:20
+Starting action vuser_init.
+Web Turbo Replay of LoadRunner 11.0.0 for Windows 7; build 8859 (Aug 18 2010 20:14:31)  	[MsgId: MMSG-27143]
+Run Mode: HTML  	[MsgId: MMSG-26000]
+Run-Time Settings file: "C:\Users\yueqiu\Desktop\脚本\NAT-mysql-odbc驱动连接mysql\\default.cfg"  	[MsgId: MMSG-27141]
+vuser_init.c(15): lrd_open_connection: User="", Server="" 
+Ending action vuser_init.
+Running Vuser...
+Starting iteration 1.
+Starting action Action.
+Action.c(54): Notify: Transaction "callheartBeat" started.
+Action.c(55): lrd_stmt: call HeartBeat('1000','192.168.141.1',' 1000'); 
+Action.c(56): Notify: Transaction "callheartBeat" ended with "Pass" status (Duration: 0.0187).
+Action.c(58): Notify: Transaction "callP2pRequest" started.
+Action.c(59): lrd_stmt: call P2pRequest('1000'); 
+Action.c(60): Notify: Transaction "callP2pRequest" ended with "Pass" status (Duration: 0.0084).
+Ending action Action.
+Ending iteration 1.
+Ending Vuser...
+Starting action vuser_end.
+vuser_end.c(6): lrd_close_connection: User="", Server="" 
+Ending action vuser_end.
+Vuser Terminated.

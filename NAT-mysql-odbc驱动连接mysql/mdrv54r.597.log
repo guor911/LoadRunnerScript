@@ -1,0 +1,8 @@
+Error: missing newline in C:\Users\yueqiu\Desktop\NAT-mysql\data.dat	[MsgId: MERR-13874]
+Start auto log messages stack - Iteration 89.	[MsgId: MMSG-10545]
+Starting action Action.	[MsgId: MMSG-15919]
+Action.c(24): lrdb_open_connection:  "SQLDriverConnect", return-code=-1, native-error-code=2003, SQLState=S1000, SQLError=[MySQL][ODBC 3.51 Driver]Can't connect to MySQL server on '192.168.139.207' (10049)	[MsgId: MERR-61209]
+Action.c(24): lrd_open_connection: ERROR, return-code=LRDE2009.  User="", Server="" 	[MsgId: MERR-61209]
+End auto log messages stack.	[MsgId: MMSG-10544]
+
+

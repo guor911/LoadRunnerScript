@@ -1,0 +1,20 @@
+Virtual User Script started at : 2016-09-18 14:41:22
+Starting action vuser_init.
+Web Turbo Replay of LoadRunner 11.0.0 for Windows 2008 R2; build 8859 (Aug 18 2010 20:14:31)  	[MsgId: MMSG-27143]
+Run Mode: HTML  	[MsgId: MMSG-26000]
+Run-Time Settings file: "G:\guorui_STE\AS-LS-Wowza\\default.cfg"  	[MsgId: MMSG-27141]
+Ending action vuser_init.
+Running Vuser...
+Starting iteration 1.
+Starting action Action.
+Action.c(37): Registering web_reg_save_param was successful  	[MsgId: MMSG-26390]
+Action.c(42): Notify: Transaction "LS" started.
+Action.c(43): web_custom_request("LS") was successful, 281 body bytes, 66 header bytes  	[MsgId: MMSG-26386]
+Action.c(72): Notify: Transaction "LS" ended with "Pass" status (Duration: 0.5921 Wasted Time: 0.5232).
+Action.c(75): web_custom_request("AS") was successful, 278 body bytes, 66 header bytes  	[MsgId: MMSG-26386]
+Ending action Action.
+Ending iteration 1.
+Ending Vuser...
+Starting action vuser_end.
+Ending action vuser_end.
+Vuser Terminated.

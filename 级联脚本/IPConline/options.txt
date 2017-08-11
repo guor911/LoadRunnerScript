@@ -1,0 +1,9 @@
+-+
+-DCCI
+-D_IDA_XL
+-DWINNT
+-ID:\lr\IPConline
+-IC:\Program Files (x86)\HP\LoadRunner\include
+-ed:\lr\ipconline\\logfile.log
+d:\lr\ipconline\\combined_IPConline.c
+d:\lr\ipconline\\pre_cci.c

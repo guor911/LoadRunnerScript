@@ -1,0 +1,18 @@
+Virtual User Script started at : 2016-10-24 11:00:24
+Starting action vuser_init.
+Web Turbo Replay of LoadRunner 11.0.0 for Windows 7; build 8859 (Aug 18 2010 20:14:31)  	[MsgId: MMSG-27143]
+Run Mode: HTML  	[MsgId: MMSG-26000]
+Run-Time Settings file: "D:\1. 项目\3.Cloud云项目\云性能\LR云性能脚本\stopStream\\default.cfg"  	[MsgId: MMSG-27141]
+Ending action vuser_init.
+Running Vuser...
+Starting iteration 1.
+Starting action Action.
+Action.c(3): Error -27796: Failed to connect to server "192.168.139.207:8091": [10061] Connection refused  	[MsgId: MERR-27796]
+Action.c(3): Warning -26000: Empty or no response for URL="http://192.168.139.207:8091/skl-cloud/cloud/stream/stop"  	[MsgId: MWAR-26000]
+Action.c(3): web_custom_request("stopStream") highest severity level was "ERROR", 0 body bytes, 0 header bytes  	[MsgId: MMSG-26388]
+Ending action Action.
+Ending iteration 1.
+Ending Vuser...
+Starting action vuser_end.
+Ending action vuser_end.
+Vuser Terminated.

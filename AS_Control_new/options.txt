@@ -1,0 +1,9 @@
+-+
+-DCCI
+-D_IDA_XL
+-DWINNT
+-IG:\guorui_STE\AS_Control_new
+-ID:\Program Files (x86)\HP\LoadRunner\include
+-eg:\guorui_ste\as_control_new\\logfile.log
+g:\guorui_ste\as_control_new\\combined_AS_Control_new.c
+g:\guorui_ste\as_control_new\\pre_cci.c

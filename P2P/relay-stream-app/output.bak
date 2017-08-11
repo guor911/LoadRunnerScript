@@ -1,0 +1,52 @@
+Virtual User Script started at : 2016-07-20 16:47:46
+Starting action vuser_init.
+vuser_init.c(74): lrs_startup(257)
+vuser_init.c(78): lrs_create_socket(appsocket0, TCP, ...)
+vuser_init.c(80): lrs_get_socket_attrib(appsocket0, LOCAL_PORT)
+vuser_init.c(84): Notify: Transaction "app_login" started.
+vuser_init.c(86): lrs_send(appsocket0, app_login)
+vuser_init.c(37): lrs_receive_ex(appsocket0, app_login_rsp)
+vuser_init.c(44): lrs_get_last_received_buffer(appsocket0, buf_p, size_p)
+vuser_init.c(89): Notify: Transaction "app_login" ended with "Pass" status (Duration: 0.0660).
+vuser_init.c(91): lrs_set_send_timeout(60, 0)
+vuser_init.c(92): lrs_set_recv_timeout(0, 10000)
+vuser_init.c(93): lrs_set_recv_timeout2(0, 100000)
+Ending action vuser_init.
+Running Vuser...
+Starting iteration 1.
+Starting action Action.
+Action.c(12): Notify: Transaction "app_recv_stream" started.
+Action.c(16): lrs_receive(appsocket0, ipc_relay_rsp)
+Action.c(16): Mismatch in buffer's length (expected 8 bytes, 0 bytes actually received, difference in 8 bytes)
+Action.c(16): lrs_receive(appsocket0, ipc_relay_rsp)
+Action.c(16): Mismatch in buffer's length (expected 8 bytes, 0 bytes actually received, difference in 8 bytes)
+Action.c(16): lrs_receive(appsocket0, ipc_relay_rsp)
+Action.c(16): Mismatch in buffer's length (expected 8 bytes, 0 bytes actually received, difference in 8 bytes)
+Action.c(16): lrs_receive(appsocket0, ipc_relay_rsp)
+Action.c(16): Mismatch in buffer's length (expected 8 bytes, 0 bytes actually received, difference in 8 bytes)
+Action.c(16): lrs_receive(appsocket0, ipc_relay_rsp)
+Action.c(16): Mismatch in buffer's length (expected 8 bytes, 0 bytes actually received, difference in 8 bytes)
+Action.c(16): lrs_receive(appsocket0, ipc_relay_rsp)
+Action.c(16): Mismatch in buffer's length (expected 8 bytes, 0 bytes actually received, difference in 8 bytes)
+Action.c(16): lrs_receive(appsocket0, ipc_relay_rsp)
+Action.c(16): Mismatch in buffer's length (expected 8 bytes, 0 bytes actually received, difference in 8 bytes)
+Action.c(16): lrs_receive(appsocket0, ipc_relay_rsp)
+Action.c(16): Mismatch in buffer's length (expected 8 bytes, 0 bytes actually received, difference in 8 bytes)
+Action.c(16): lrs_receive(appsocket0, ipc_relay_rsp)
+Action.c(16): Mismatch in buffer's length (expected 8 bytes, 0 bytes actually received, difference in 8 bytes)
+Action.c(16): lrs_receive(appsocket0, ipc_relay_rsp)
+Action.c(16): Mismatch in buffer's length (expected 8 bytes, 0 bytes actually received, difference in 8 bytes)
+Action.c(28): Notify: Transaction "app_recv_stream" ended with "Pass" status (Duration: 0.1819 Wasted Time: 0.1000).
+Action.c(33): Notify: Transaction "app_relay_cmd" started.
+Action.c(35): lrs_send(appsocket0, app_relay_cmd)
+Action.c(36): lrs_receive(appsocket0, app_relay_cmd_rsp)
+Action.c(36): Mismatch in buffer's length (expected 12 bytes, 8 bytes actually received, difference in 4 bytes)
+Action.c(39): Notify: Transaction "app_relay_cmd" ended with "Pass" status (Duration: 0.1269 Wasted Time: 0.1000).
+Ending action Action.
+Ending iteration 1.
+Ending Vuser...
+Starting action vuser_end.
+vuser_end.c(6): lrs_close_socket(appsocket0)
+vuser_end.c(7): lrs_cleanup()
+Ending action vuser_end.
+Vuser Terminated.

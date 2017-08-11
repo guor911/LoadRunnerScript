@@ -1,0 +1,16 @@
+Virtual User Script started at : 2016-12-01 11:08:24
+Starting action vuser_init.
+Web Turbo Replay of LoadRunner 11.0.0 for Windows 2008 R2; build 8859 (Aug 18 2010 20:14:31)  	[MsgId: MMSG-27143]
+Run Mode: HTML  	[MsgId: MMSG-26000]
+Run-Time Settings file: "G:\guorui_STE\setSteamConfig_capture_new\\default.cfg"  	[MsgId: MMSG-27141]
+Ending action vuser_init.
+Running Vuser...
+Starting iteration 1.
+Starting action Action.
+Action.c(5): web_custom_request("setStreamConfig") was successful, 96 body bytes, 65 header bytes  	[MsgId: MMSG-26386]
+Ending action Action.
+Ending iteration 1.
+Ending Vuser...
+Starting action vuser_end.
+Ending action vuser_end.
+Vuser Terminated.

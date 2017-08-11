@@ -1,0 +1,5 @@
+"<streamStop>\r\n"
+"<qId>0000000000000</qId>\r\n"
+"<channelId>MAIN</channelId>\r\n"
+"<destIp>127.0.0.1</destIp>\r\n"
+"</streamStop>\r\n"

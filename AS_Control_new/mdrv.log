@@ -1,0 +1,13 @@
+Virtual User Script started at : 2016-11-18 12:25:59
+Starting action vuser_init.
+Web Turbo Replay of LoadRunner 11.0.0 for Windows 2008 R2; build 8859 (Aug 18 2010 20:14:31)  	[MsgId: MMSG-27143]
+Run Mode: HTML  	[MsgId: MMSG-26000]
+Run-Time Settings file: "G:\guorui_STE\AS_Control_new\\default.cfg"  	[MsgId: MMSG-27141]
+Ending action vuser_init.
+Running Vuser...
+Starting iteration 1.
+Starting action Action.
+Action.c(4): Notify: Transaction "AS" started.
+Action.c(5): Notify: Transaction "AS" ended with "Stop" status (Duration: 5.6257 Wasted Time: 5.6094).
+Ending Vuser...
+Starting action vuser_end.

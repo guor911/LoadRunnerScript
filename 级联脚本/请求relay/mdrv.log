@@ -1,0 +1,24 @@
+Virtual User Script started at : 2017-03-09 14:00:48
+Starting action vuser_init.
+Web Turbo Replay of LoadRunner 11.0.0 for Windows 7; build 8859 (Aug 18 2010 20:14:31)  	[MsgId: MMSG-27143]
+Run Mode: HTML  	[MsgId: MMSG-26000]
+Run-Time Settings file: "D:\1. 项目\3.Cloud云项目\云性能\LR云性能脚本\级联脚本\请求relay\\default.cfg"  	[MsgId: MMSG-27141]
+Ending action vuser_init.
+Running Vuser...
+Starting iteration 1.
+Starting action Action.
+Action.c(4): Registering web_reg_save_param was successful  	[MsgId: MMSG-26390]
+Action.c(5): Registering web_reg_save_param was successful  	[MsgId: MMSG-26390]
+Action.c(8): Notify: Transaction "getLiveUrl" started.
+Action.c(9): HTML parsing not performed for Content-Type "application/xml" ("ParseHtmlContentType" Run-Time Setting is "TEXT"). URL="http://192.168.139.213:8080/sklcloud/app/push/streaming/snDevice/RTMP/live/AAAAAAAA"  	[MsgId: MMSG-26548]
+Action.c(9): web_custom_request("apprelay") was successful, 334 body bytes, 2063 header bytes  	[MsgId: MMSG-26386]
+Action.c(19): Notify: Transaction "getLiveUrl" ended with "Pass" status (Duration: 2.8622 Wasted Time: 1.2038).
+响应URL：rtmp://192.168.139.208:1935/live/AAAAAAAA_MAIN.stream?param=0_AAAAAAAA_dd542d55-1104-451f-9784-ca2fbe3723eb
+
+Action.c(27): web_custom_request("getStreamTool") was successful, 108 body bytes, 66 header bytes  	[MsgId: MMSG-26386]
+Ending action Action.
+Ending iteration 1.
+Ending Vuser...
+Starting action vuser_end.
+Ending action vuser_end.
+Vuser Terminated.

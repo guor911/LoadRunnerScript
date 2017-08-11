@@ -1,0 +1,9 @@
+-+
+-DCCI
+-D_IDA_XL
+-DWINNT
+-ID:\1. 项目\3.Cloud云项目\云性能\指令中心\IPC的http并发连接
+-IC:\Program Files\HP\LoadRunner\include
+-ed:\1. 项目\3.cloud云项目\云性能\指令中心\ipc的http并发连接\\logfile.log
+d:\1. 项目\3.cloud云项目\云性能\指令中心\ipc的http并发连接\\combined_IPC的http并发连接.c
+d:\1. 项目\3.cloud云项目\云性能\指令中心\ipc的http并发连接\\pre_cci.c

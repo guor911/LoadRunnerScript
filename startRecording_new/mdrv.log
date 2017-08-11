@@ -1,0 +1,26 @@
+Virtual User Script started at : 2016-12-05 18:22:03
+Starting action vuser_init.
+Web Turbo Replay of LoadRunner 11.0.0 for Windows 2008 R2; build 8859 (Aug 18 2010 20:14:31)  	[MsgId: MMSG-27143]
+Run Mode: HTML  	[MsgId: MMSG-26000]
+Run-Time Settings file: "G:\guorui_STE\startRecording_new\\default.cfg"  	[MsgId: MMSG-27141]
+Ending action vuser_init.
+Running Vuser...
+Starting iteration 1.
+Starting action Action.
+1161204643203353484
+Ending action Action.
+Ending iteration 1.
+Starting iteration 2.
+Starting action Action.
+1029358932286613034
+Ending action Action.
+Ending iteration 2.
+Starting iteration 3.
+Starting action Action.
+0195842279736058194
+Ending action Action.
+Ending iteration 3.
+Ending Vuser...
+Starting action vuser_end.
+Ending action vuser_end.
+Vuser Terminated.

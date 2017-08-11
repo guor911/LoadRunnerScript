@@ -1,0 +1,1 @@
+﻿<?xml version="1.0" encoding="UTF-8"?><SLA Version="1.0"><TxList><Tx>AS</Tx><Tx>vuser_end_Transaction</Tx><Tx>AS_Stop</Tx><Tx>Action_Transaction</Tx><Tx>vuser_init_Transaction</Tx></TxList><SLARules><TrackingPeriodType>Default</TrackingPeriodType><TrackingPeriodValue></TrackingPeriodValue><TrackingPeriodTimeScale></TrackingPeriodTimeScale></SLARules></SLA>

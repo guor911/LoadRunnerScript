@@ -1,0 +1,9 @@
+-+
+-DCCI
+-D_IDA_XL
+-DWINNT
+-ID:\1. 项目\3.Cloud云项目\云性能\LR云性能脚本\级联脚本\请求relay
+-ID:\Program Files (x86)\HP\LoadRunner\include
+-ed:\1. 项目\3.cloud云项目\云性能\lr云性能脚本\级联脚本\请求relay\\logfile.log
+d:\1. 项目\3.cloud云项目\云性能\lr云性能脚本\级联脚本\请求relay\\combined_请求relay.c
+d:\1. 项目\3.cloud云项目\云性能\lr云性能脚本\级联脚本\请求relay\\pre_cci.c

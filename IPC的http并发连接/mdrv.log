@@ -1,0 +1,19 @@
+Virtual User Script started at : 2016-11-07 13:47:53
+Starting action vuser_init.
+Web Turbo Replay of LoadRunner 11.0.0 for Windows 7; build 8859 (Aug 18 2010 20:14:31)  	[MsgId: MMSG-27143]
+Run Mode: HTML  	[MsgId: MMSG-26000]
+Run-Time Settings file: "D:\1. 项目\3.Cloud云项目\云性能\指令中心\IPC的http并发连接\\default.cfg"  	[MsgId: MMSG-27141]
+Ending action vuser_init.
+Running Vuser...
+Starting iteration 1.
+Starting action Action.
+Action.c(5): Notify: Transaction "ipc-http-connect" started.
+Action.c(8): web_disable_keep_alive was successful  	[MsgId: MMSG-26392]
+Action.c(10): web_custom_request("getipc") was successful, 436 body bytes, 85 header bytes  	[MsgId: MMSG-26386]
+Action.c(29): Notify: Transaction "ipc-http-connect" ended with "Pass" status (Duration: 0.6715 Wasted Time: 0.5226).
+Ending action Action.
+Ending iteration 1.
+Ending Vuser...
+Starting action vuser_end.
+Ending action vuser_end.
+Vuser Terminated.

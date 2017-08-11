@@ -1,0 +1,2 @@
+[Hosts]
+localhost=G:\guorui_STE\AS_Control_new\res\localhost_1.eve

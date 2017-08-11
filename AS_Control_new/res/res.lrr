@@ -1,0 +1,32 @@
+[Scenario]
+Product=HP LoadRunner Controller
+Version=11.0.0.0
+Path=Scenario1
+Subject=
+Result_file=G:\guorui_STE\AS_Control_new\res\res.lrr
+Description=
+ResultName=res
+Time_Zone=-28800
+Start_time=1479695868
+Daylight_Bias=0
+Stop_time=1479695925
+[Configuration]
+Public_local=1
+Is_mix=1
+Is_runner_file=0
+Runner_file=
+[Running_mode]
+Start_reason=By command
+Stop_reason=By command
+[Data Collection]
+FullData=1
+[Scenario_summary]
+Scenario Type=Manual Scenario
+Goal Profile Name=Default Schedule
+Mode=Group Scheduling
+Scenario Duration=Unknown duration
+Load Behavior=Defined per scenario group
+[Scripts]
+ASControl_ASSTOP_1=G:\guorui_STE\ASControl_ASSTOP\ASControl_ASSTOP.usr
+[Scripts_types]
+ASControl_ASSTOP_1=Multi+QTWeb

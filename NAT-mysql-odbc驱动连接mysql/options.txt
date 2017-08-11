@@ -1,0 +1,9 @@
+-+
+-DCCI
+-D_IDA_XL
+-DWINNT
+-IC:\Users\yueqiu\Desktop\脚本\NAT-mysql-odbc驱动连接mysql
+-ID:\Program Files\HP\LoadRunner\include
+-ec:\users\yueqiu\desktop\脚本\nat-mysql-odbc驱动连接mysql\\logfile.log
+c:\users\yueqiu\desktop\脚本\nat-mysql-odbc驱动连接mysql\\combined_NAT-mysql.c
+c:\users\yueqiu\desktop\脚本\nat-mysql-odbc驱动连接mysql\\pre_cci.c

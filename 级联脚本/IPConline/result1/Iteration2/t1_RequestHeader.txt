@@ -1,0 +1,8 @@
+GET /sklcloud/skl-cloud/cloud/ipcCommand/connect HTTP/1.1
+User-Agent: Mozilla/4.0 (compatible; MSIE 6.0; Windows NT)
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: Keep-Alive
+Host: 192.168.139.213:8080
+Content-Length: 119
+

@@ -1,0 +1,9 @@
+-+
+-DCCI
+-D_IDA_XL
+-DWINNT
+-IG:\guorui_STE\指令中心\多个IPC连接指令中心并发3000
+-ID:\Program Files (x86)\HP\LoadRunner\include
+-eg:\guorui_ste\指令中心\多个ipc连接指令中心并发3000\\logfile.log
+g:\guorui_ste\指令中心\多个ipc连接指令中心并发3000\\combined_多个IPC连接指令中心并发3000.c
+g:\guorui_ste\指令中心\多个ipc连接指令中心并发3000\\pre_cci.c

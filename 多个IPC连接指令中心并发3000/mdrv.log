@@ -1,0 +1,23 @@
+Virtual User Script started at : 2016-12-09 11:27:35
+Starting action vuser_init.
+vuser_init.c(6): lrs_startup(257)
+2000000001
+vuser_init.c(8): lrs_create_socket(socket0, TCP, ...)
+vuser_init.c(10): lrs_send(socket0, buf0)
+vuser_init.c(11): lrs_receive(socket0, buf1)
+Ending action vuser_init.
+Running Vuser...
+Starting iteration 1.
+Starting action Action.
+Action.c(5): Notify: Transaction "ipccomand" started.
+Action.c(6): lrs_send(socket0, buf2)
+Action.c(7): lrs_receive(socket0, buf3)
+Action.c(8): Notify: Transaction "ipccomand" ended with "Pass" status (Duration: 0.0136).
+Ending action Action.
+Ending iteration 1.
+Ending Vuser...
+Starting action vuser_end.
+vuser_end.c(6): lrs_close_socket(socket0)
+vuser_end.c(7): lrs_cleanup()
+Ending action vuser_end.
+Vuser Terminated.

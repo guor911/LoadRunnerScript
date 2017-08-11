@@ -1,0 +1,39 @@
+Virtual User Script started at : 2016-07-20 16:17:55
+Starting action vuser_init.
+vuser_init.c(73): lrs_startup(257)
+vuser_init.c(77): lrs_create_socket(ipcsocket0, TCP, ...)
+vuser_init.c(79): lrs_get_socket_attrib(ipcsocket0, LOCAL_PORT)
+vuser_init.c(84): Notify: Transaction "ipc_login" started.
+vuser_init.c(86): lrs_send(ipcsocket0, ipc_login)
+vuser_init.c(36): lrs_receive_ex(ipcsocket0, ipc_login_rsp)
+vuser_init.c(43): lrs_get_last_received_buffer(ipcsocket0, buf_p, size_p)
+vuser_init.c(89): Notify: Transaction "ipc_login" ended with "Pass" status (Duration: 0.0689).
+vuser_init.c(91): lrs_set_send_timeout(60, 0)
+vuser_init.c(92): lrs_set_recv_timeout(0, 10000)
+vuser_init.c(93): lrs_set_recv_timeout2(0, 10000)
+Ending action vuser_init.
+Running Vuser...
+Starting iteration 1.
+Starting action Action.
+Action.c(16): Notify: Transaction "ipc_relay" started.
+Action.c(19): lrs_send(ipcsocket0, ipc_relay_mutli)
+Action.c(19): lrs_send(ipcsocket0, ipc_relay_mutli)
+Action.c(19): lrs_send(ipcsocket0, ipc_relay_mutli)
+Action.c(19): lrs_send(ipcsocket0, ipc_relay_mutli)
+Action.c(19): lrs_send(ipcsocket0, ipc_relay_mutli)
+Action.c(19): lrs_send(ipcsocket0, ipc_relay_mutli)
+Action.c(19): lrs_send(ipcsocket0, ipc_relay_mutli)
+Action.c(19): lrs_send(ipcsocket0, ipc_relay_mutli)
+Action.c(19): lrs_send(ipcsocket0, ipc_relay_mutli)
+Action.c(19): lrs_send(ipcsocket0, ipc_relay_mutli)
+Action.c(25): lrs_receive(ipcsocket0, ipc_relay_mutli_rsp)
+Action.c(25): Mismatch in buffer's length (expected 80 bytes, 800 bytes actually received, difference in 720 bytes)
+Action.c(26): Notify: Transaction "ipc_relay" ended with "Pass" status (Duration: 0.0700 Wasted Time: 0.0100).
+Ending action Action.
+Ending iteration 1.
+Ending Vuser...
+Starting action vuser_end.
+vuser_end.c(6): lrs_close_socket(ipcsocket0)
+vuser_end.c(7): lrs_cleanup()
+Ending action vuser_end.
+Vuser Terminated.

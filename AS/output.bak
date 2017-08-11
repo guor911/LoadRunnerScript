@@ -1,0 +1,394 @@
+Virtual User Script started at : 2016-10-17 11:32:38
+Starting action vuser_init.
+Web Turbo Replay of LoadRunner 11.0.0 for Windows 7; build 8859 (Aug 18 2010 20:14:31)  	[MsgId: MMSG-27143]
+Run Mode: HTML  	[MsgId: MMSG-26000]
+Run-Time Settings file: "D:\1. 项目\3.Cloud云项目\云性能\LR云性能脚本\AS\\default.cfg"  	[MsgId: MMSG-27141]
+Ending action vuser_init.
+Running Vuser...
+Starting iteration 1.
+Starting action Action.
+Action.c(3): Rendezvous point
+Action.c(4): Notify: Transaction "AS" started.
+Action.c(5): web_custom_request("AS") was successful, 287 body bytes, 66 header bytes  	[MsgId: MMSG-26386]
+Action.c(33): Notify: Transaction "AS" ended with "Pass" status (Duration: 0.4759 Wasted Time: 0.3381).
+Ending action Action.
+Ending iteration 1.
+Starting iteration 2.
+Starting action Action.
+Action.c(3): Rendezvous point
+Action.c(4): Notify: Transaction "AS" started.
+Action.c(5): web_custom_request("AS") was successful, 287 body bytes, 66 header bytes  	[MsgId: MMSG-26386]
+Action.c(33): Notify: Transaction "AS" ended with "Pass" status (Duration: 0.1221 Wasted Time: 0.0012).
+Ending action Action.
+Ending iteration 2.
+Starting iteration 3.
+Starting action Action.
+Action.c(3): Rendezvous point
+Action.c(4): Notify: Transaction "AS" started.
+Action.c(5): web_custom_request("AS") was successful, 287 body bytes, 66 header bytes  	[MsgId: MMSG-26386]
+Action.c(33): Notify: Transaction "AS" ended with "Pass" status (Duration: 0.1629 Wasted Time: 0.0015).
+Ending action Action.
+Ending iteration 3.
+Starting iteration 4.
+Starting action Action.
+Action.c(3): Rendezvous point
+Action.c(4): Notify: Transaction "AS" started.
+Action.c(5): web_custom_request("AS") was successful, 278 body bytes, 66 header bytes  	[MsgId: MMSG-26386]
+Action.c(33): Notify: Transaction "AS" ended with "Pass" status (Duration: 0.1442 Wasted Time: 0.0197).
+Ending action Action.
+Ending iteration 4.
+Starting iteration 5.
+Starting action Action.
+Action.c(3): Rendezvous point
+Action.c(4): Notify: Transaction "AS" started.
+Action.c(5): web_custom_request("AS") was successful, 278 body bytes, 66 header bytes  	[MsgId: MMSG-26386]
+Action.c(33): Notify: Transaction "AS" ended with "Pass" status (Duration: 0.1365 Wasted Time: 0.0025).
+Ending action Action.
+Ending iteration 5.
+Starting iteration 6.
+Starting action Action.
+Action.c(3): Rendezvous point
+Action.c(4): Notify: Transaction "AS" started.
+Action.c(5): web_custom_request("AS") was successful, 278 body bytes, 66 header bytes  	[MsgId: MMSG-26386]
+Action.c(33): Notify: Transaction "AS" ended with "Pass" status (Duration: 0.1339 Wasted Time: 0.0016).
+Ending action Action.
+Ending iteration 6.
+Starting iteration 7.
+Starting action Action.
+Action.c(3): Rendezvous point
+Action.c(4): Notify: Transaction "AS" started.
+Action.c(5): web_custom_request("AS") was successful, 278 body bytes, 66 header bytes  	[MsgId: MMSG-26386]
+Action.c(33): Notify: Transaction "AS" ended with "Pass" status (Duration: 0.1363 Wasted Time: 0.0012).
+Ending action Action.
+Ending iteration 7.
+Starting iteration 8.
+Starting action Action.
+Action.c(3): Rendezvous point
+Action.c(4): Notify: Transaction "AS" started.
+Action.c(5): web_custom_request("AS") was successful, 278 body bytes, 66 header bytes  	[MsgId: MMSG-26386]
+Action.c(33): Notify: Transaction "AS" ended with "Pass" status (Duration: 0.1376 Wasted Time: 0.0028).
+Ending action Action.
+Ending iteration 8.
+Starting iteration 9.
+Starting action Action.
+Action.c(3): Rendezvous point
+Action.c(4): Notify: Transaction "AS" started.
+Action.c(5): web_custom_request("AS") was successful, 278 body bytes, 66 header bytes  	[MsgId: MMSG-26386]
+Action.c(33): Notify: Transaction "AS" ended with "Pass" status (Duration: 0.1330 Wasted Time: 0.0024).
+Ending action Action.
+Ending iteration 9.
+Starting iteration 10.
+Starting action Action.
+Action.c(3): Rendezvous point
+Action.c(4): Notify: Transaction "AS" started.
+Action.c(5): web_custom_request("AS") was successful, 278 body bytes, 66 header bytes  	[MsgId: MMSG-26386]
+Action.c(33): Notify: Transaction "AS" ended with "Pass" status (Duration: 0.1345 Wasted Time: 0.0016).
+Ending action Action.
+Ending iteration 10.
+Starting iteration 11.
+Starting action Action.
+Action.c(3): Rendezvous point
+Action.c(4): Notify: Transaction "AS" started.
+Action.c(5): web_custom_request("AS") was successful, 278 body bytes, 66 header bytes  	[MsgId: MMSG-26386]
+Action.c(33): Notify: Transaction "AS" ended with "Pass" status (Duration: 0.1361 Wasted Time: 0.0019).
+Ending action Action.
+Ending iteration 11.
+Starting iteration 12.
+Starting action Action.
+Action.c(3): Rendezvous point
+Action.c(4): Notify: Transaction "AS" started.
+Action.c(5): web_custom_request("AS") was successful, 278 body bytes, 66 header bytes  	[MsgId: MMSG-26386]
+Action.c(33): Notify: Transaction "AS" ended with "Pass" status (Duration: 0.1456 Wasted Time: 0.0041).
+Ending action Action.
+Ending iteration 12.
+Starting iteration 13.
+Starting action Action.
+Action.c(3): Rendezvous point
+Action.c(4): Notify: Transaction "AS" started.
+Action.c(5): web_custom_request("AS") was successful, 278 body bytes, 66 header bytes  	[MsgId: MMSG-26386]
+Action.c(33): Notify: Transaction "AS" ended with "Pass" status (Duration: 0.1435 Wasted Time: 0.0018).
+Ending action Action.
+Ending iteration 13.
+Starting iteration 14.
+Starting action Action.
+Action.c(3): Rendezvous point
+Action.c(4): Notify: Transaction "AS" started.
+Action.c(5): web_custom_request("AS") was successful, 278 body bytes, 66 header bytes  	[MsgId: MMSG-26386]
+Action.c(33): Notify: Transaction "AS" ended with "Pass" status (Duration: 0.1446 Wasted Time: 0.0011).
+Ending action Action.
+Ending iteration 14.
+Starting iteration 15.
+Starting action Action.
+Action.c(3): Rendezvous point
+Action.c(4): Notify: Transaction "AS" started.
+Action.c(5): web_custom_request("AS") was successful, 278 body bytes, 66 header bytes  	[MsgId: MMSG-26386]
+Action.c(33): Notify: Transaction "AS" ended with "Pass" status (Duration: 0.7281 Wasted Time: 0.0014).
+Ending action Action.
+Ending iteration 15.
+Starting iteration 16.
+Starting action Action.
+Action.c(3): Rendezvous point
+Action.c(4): Notify: Transaction "AS" started.
+Action.c(5): web_custom_request("AS") was successful, 278 body bytes, 66 header bytes  	[MsgId: MMSG-26386]
+Action.c(33): Notify: Transaction "AS" ended with "Pass" status (Duration: 0.1698 Wasted Time: 0.0396).
+Ending action Action.
+Ending iteration 16.
+Starting iteration 17.
+Starting action Action.
+Action.c(3): Rendezvous point
+Action.c(4): Notify: Transaction "AS" started.
+Action.c(5): web_custom_request("AS") was successful, 278 body bytes, 66 header bytes  	[MsgId: MMSG-26386]
+Action.c(33): Notify: Transaction "AS" ended with "Pass" status (Duration: 0.1414 Wasted Time: 0.0013).
+Ending action Action.
+Ending iteration 17.
+Starting iteration 18.
+Starting action Action.
+Action.c(3): Rendezvous point
+Action.c(4): Notify: Transaction "AS" started.
+Action.c(5): web_custom_request("AS") was successful, 278 body bytes, 66 header bytes  	[MsgId: MMSG-26386]
+Action.c(33): Notify: Transaction "AS" ended with "Pass" status (Duration: 0.1419 Wasted Time: 0.0015).
+Ending action Action.
+Ending iteration 18.
+Starting iteration 19.
+Starting action Action.
+Action.c(3): Rendezvous point
+Action.c(4): Notify: Transaction "AS" started.
+Action.c(5): web_custom_request("AS") was successful, 278 body bytes, 66 header bytes  	[MsgId: MMSG-26386]
+Action.c(33): Notify: Transaction "AS" ended with "Pass" status (Duration: 0.1314 Wasted Time: 0.0016).
+Ending action Action.
+Ending iteration 19.
+Starting iteration 20.
+Starting action Action.
+Action.c(3): Rendezvous point
+Action.c(4): Notify: Transaction "AS" started.
+Action.c(5): web_custom_request("AS") was successful, 278 body bytes, 66 header bytes  	[MsgId: MMSG-26386]
+Action.c(33): Notify: Transaction "AS" ended with "Pass" status (Duration: 0.1411 Wasted Time: 0.0020).
+Ending action Action.
+Ending iteration 20.
+Starting iteration 21.
+Starting action Action.
+Action.c(3): Rendezvous point
+Action.c(4): Notify: Transaction "AS" started.
+Action.c(5): web_custom_request("AS") was successful, 278 body bytes, 66 header bytes  	[MsgId: MMSG-26386]
+Action.c(33): Notify: Transaction "AS" ended with "Pass" status (Duration: 0.1289 Wasted Time: 0.0012).
+Ending action Action.
+Ending iteration 21.
+Starting iteration 22.
+Starting action Action.
+Action.c(3): Rendezvous point
+Action.c(4): Notify: Transaction "AS" started.
+Action.c(5): web_custom_request("AS") was successful, 278 body bytes, 66 header bytes  	[MsgId: MMSG-26386]
+Action.c(33): Notify: Transaction "AS" ended with "Pass" status (Duration: 0.1339 Wasted Time: 0.0023).
+Ending action Action.
+Ending iteration 22.
+Starting iteration 23.
+Starting action Action.
+Action.c(3): Rendezvous point
+Action.c(4): Notify: Transaction "AS" started.
+Action.c(5): web_custom_request("AS") was successful, 278 body bytes, 66 header bytes  	[MsgId: MMSG-26386]
+Action.c(33): Notify: Transaction "AS" ended with "Pass" status (Duration: 0.6014 Wasted Time: 0.0014).
+Ending action Action.
+Ending iteration 23.
+Starting iteration 24.
+Starting action Action.
+Action.c(3): Rendezvous point
+Action.c(4): Notify: Transaction "AS" started.
+Action.c(5): web_custom_request("AS") was successful, 278 body bytes, 66 header bytes  	[MsgId: MMSG-26386]
+Action.c(33): Notify: Transaction "AS" ended with "Pass" status (Duration: 0.2495 Wasted Time: 0.0012).
+Ending action Action.
+Ending iteration 24.
+Starting iteration 25.
+Starting action Action.
+Action.c(3): Rendezvous point
+Action.c(4): Notify: Transaction "AS" started.
+Action.c(5): web_custom_request("AS") was successful, 278 body bytes, 66 header bytes  	[MsgId: MMSG-26386]
+Action.c(33): Notify: Transaction "AS" ended with "Pass" status (Duration: 0.1425 Wasted Time: 0.0016).
+Ending action Action.
+Ending iteration 25.
+Starting iteration 26.
+Starting action Action.
+Action.c(3): Rendezvous point
+Action.c(4): Notify: Transaction "AS" started.
+Action.c(5): web_custom_request("AS") was successful, 278 body bytes, 66 header bytes  	[MsgId: MMSG-26386]
+Action.c(33): Notify: Transaction "AS" ended with "Pass" status (Duration: 0.1398 Wasted Time: 0.0015).
+Ending action Action.
+Ending iteration 26.
+Starting iteration 27.
+Starting action Action.
+Action.c(3): Rendezvous point
+Action.c(4): Notify: Transaction "AS" started.
+Action.c(5): web_custom_request("AS") was successful, 278 body bytes, 66 header bytes  	[MsgId: MMSG-26386]
+Action.c(33): Notify: Transaction "AS" ended with "Pass" status (Duration: 0.1462 Wasted Time: 0.0018).
+Ending action Action.
+Ending iteration 27.
+Starting iteration 28.
+Starting action Action.
+Action.c(3): Rendezvous point
+Action.c(4): Notify: Transaction "AS" started.
+Action.c(5): web_custom_request("AS") was successful, 278 body bytes, 66 header bytes  	[MsgId: MMSG-26386]
+Action.c(33): Notify: Transaction "AS" ended with "Pass" status (Duration: 0.1371 Wasted Time: 0.0015).
+Ending action Action.
+Ending iteration 28.
+Starting iteration 29.
+Starting action Action.
+Action.c(3): Rendezvous point
+Action.c(4): Notify: Transaction "AS" started.
+Action.c(5): web_custom_request("AS") was successful, 278 body bytes, 66 header bytes  	[MsgId: MMSG-26386]
+Action.c(33): Notify: Transaction "AS" ended with "Pass" status (Duration: 0.1357 Wasted Time: 0.0019).
+Ending action Action.
+Ending iteration 29.
+Starting iteration 30.
+Starting action Action.
+Action.c(3): Rendezvous point
+Action.c(4): Notify: Transaction "AS" started.
+Action.c(5): web_custom_request("AS") was successful, 278 body bytes, 66 header bytes  	[MsgId: MMSG-26386]
+Action.c(33): Notify: Transaction "AS" ended with "Pass" status (Duration: 0.1405 Wasted Time: 0.0016).
+Ending action Action.
+Ending iteration 30.
+Starting iteration 31.
+Starting action Action.
+Action.c(3): Rendezvous point
+Action.c(4): Notify: Transaction "AS" started.
+Action.c(5): web_custom_request("AS") was successful, 278 body bytes, 66 header bytes  	[MsgId: MMSG-26386]
+Action.c(33): Notify: Transaction "AS" ended with "Pass" status (Duration: 0.1441 Wasted Time: 0.0016).
+Ending action Action.
+Ending iteration 31.
+Starting iteration 32.
+Starting action Action.
+Action.c(3): Rendezvous point
+Action.c(4): Notify: Transaction "AS" started.
+Action.c(5): web_custom_request("AS") was successful, 278 body bytes, 66 header bytes  	[MsgId: MMSG-26386]
+Action.c(33): Notify: Transaction "AS" ended with "Pass" status (Duration: 0.1339 Wasted Time: 0.0018).
+Ending action Action.
+Ending iteration 32.
+Starting iteration 33.
+Starting action Action.
+Action.c(3): Rendezvous point
+Action.c(4): Notify: Transaction "AS" started.
+Action.c(5): web_custom_request("AS") was successful, 278 body bytes, 66 header bytes  	[MsgId: MMSG-26386]
+Action.c(33): Notify: Transaction "AS" ended with "Pass" status (Duration: 0.1360 Wasted Time: 0.0017).
+Ending action Action.
+Ending iteration 33.
+Starting iteration 34.
+Starting action Action.
+Action.c(3): Rendezvous point
+Action.c(4): Notify: Transaction "AS" started.
+Action.c(5): web_custom_request("AS") was successful, 278 body bytes, 66 header bytes  	[MsgId: MMSG-26386]
+Action.c(33): Notify: Transaction "AS" ended with "Pass" status (Duration: 0.1288 Wasted Time: 0.0021).
+Ending action Action.
+Ending iteration 34.
+Starting iteration 35.
+Starting action Action.
+Action.c(3): Rendezvous point
+Action.c(4): Notify: Transaction "AS" started.
+Action.c(5): web_custom_request("AS") was successful, 278 body bytes, 66 header bytes  	[MsgId: MMSG-26386]
+Action.c(33): Notify: Transaction "AS" ended with "Pass" status (Duration: 0.1446 Wasted Time: 0.0016).
+Ending action Action.
+Ending iteration 35.
+Starting iteration 36.
+Starting action Action.
+Action.c(3): Rendezvous point
+Action.c(4): Notify: Transaction "AS" started.
+Action.c(5): web_custom_request("AS") was successful, 278 body bytes, 66 header bytes  	[MsgId: MMSG-26386]
+Action.c(33): Notify: Transaction "AS" ended with "Pass" status (Duration: 0.2034 Wasted Time: 0.0012).
+Ending action Action.
+Ending iteration 36.
+Starting iteration 37.
+Starting action Action.
+Action.c(3): Rendezvous point
+Action.c(4): Notify: Transaction "AS" started.
+Action.c(5): web_custom_request("AS") was successful, 278 body bytes, 66 header bytes  	[MsgId: MMSG-26386]
+Action.c(33): Notify: Transaction "AS" ended with "Pass" status (Duration: 0.1408 Wasted Time: 0.0024).
+Ending action Action.
+Ending iteration 37.
+Starting iteration 38.
+Starting action Action.
+Action.c(3): Rendezvous point
+Action.c(4): Notify: Transaction "AS" started.
+Action.c(5): web_custom_request("AS") was successful, 278 body bytes, 66 header bytes  	[MsgId: MMSG-26386]
+Action.c(33): Notify: Transaction "AS" ended with "Pass" status (Duration: 0.2997 Wasted Time: 0.0012).
+Ending action Action.
+Ending iteration 38.
+Starting iteration 39.
+Starting action Action.
+Action.c(3): Rendezvous point
+Action.c(4): Notify: Transaction "AS" started.
+Action.c(5): web_custom_request("AS") was successful, 278 body bytes, 66 header bytes  	[MsgId: MMSG-26386]
+Action.c(33): Notify: Transaction "AS" ended with "Pass" status (Duration: 0.1267 Wasted Time: 0.0021).
+Ending action Action.
+Ending iteration 39.
+Starting iteration 40.
+Starting action Action.
+Action.c(3): Rendezvous point
+Action.c(4): Notify: Transaction "AS" started.
+Action.c(5): web_custom_request("AS") was successful, 278 body bytes, 66 header bytes  	[MsgId: MMSG-26386]
+Action.c(33): Notify: Transaction "AS" ended with "Pass" status (Duration: 0.1467 Wasted Time: 0.0020).
+Ending action Action.
+Ending iteration 40.
+Starting iteration 41.
+Starting action Action.
+Action.c(3): Rendezvous point
+Action.c(4): Notify: Transaction "AS" started.
+Action.c(5): web_custom_request("AS") was successful, 278 body bytes, 66 header bytes  	[MsgId: MMSG-26386]
+Action.c(33): Notify: Transaction "AS" ended with "Pass" status (Duration: 0.1333 Wasted Time: 0.0016).
+Ending action Action.
+Ending iteration 41.
+Starting iteration 42.
+Starting action Action.
+Action.c(3): Rendezvous point
+Action.c(4): Notify: Transaction "AS" started.
+Action.c(5): web_custom_request("AS") was successful, 278 body bytes, 66 header bytes  	[MsgId: MMSG-26386]
+Action.c(33): Notify: Transaction "AS" ended with "Pass" status (Duration: 0.1450 Wasted Time: 0.0019).
+Ending action Action.
+Ending iteration 42.
+Starting iteration 43.
+Starting action Action.
+Action.c(3): Rendezvous point
+Action.c(4): Notify: Transaction "AS" started.
+Action.c(5): web_custom_request("AS") was successful, 278 body bytes, 66 header bytes  	[MsgId: MMSG-26386]
+Action.c(33): Notify: Transaction "AS" ended with "Pass" status (Duration: 0.1432 Wasted Time: 0.0021).
+Ending action Action.
+Ending iteration 43.
+Starting iteration 44.
+Starting action Action.
+Action.c(3): Rendezvous point
+Action.c(4): Notify: Transaction "AS" started.
+Action.c(5): web_custom_request("AS") was successful, 278 body bytes, 66 header bytes  	[MsgId: MMSG-26386]
+Action.c(33): Notify: Transaction "AS" ended with "Pass" status (Duration: 0.1448 Wasted Time: 0.0025).
+Ending action Action.
+Ending iteration 44.
+Starting iteration 45.
+Starting action Action.
+Action.c(3): Rendezvous point
+Action.c(4): Notify: Transaction "AS" started.
+Action.c(5): web_custom_request("AS") was successful, 278 body bytes, 66 header bytes  	[MsgId: MMSG-26386]
+Action.c(33): Notify: Transaction "AS" ended with "Pass" status (Duration: 0.1261 Wasted Time: 0.0011).
+Ending action Action.
+Ending iteration 45.
+Starting iteration 46.
+Starting action Action.
+Action.c(3): Rendezvous point
+Action.c(4): Notify: Transaction "AS" started.
+Action.c(5): web_custom_request("AS") was successful, 278 body bytes, 66 header bytes  	[MsgId: MMSG-26386]
+Action.c(33): Notify: Transaction "AS" ended with "Pass" status (Duration: 0.1468 Wasted Time: 0.0016).
+Ending action Action.
+Ending iteration 46.
+Starting iteration 47.
+Starting action Action.
+Action.c(3): Rendezvous point
+Action.c(4): Notify: Transaction "AS" started.
+Action.c(5): web_custom_request("AS") was successful, 278 body bytes, 66 header bytes  	[MsgId: MMSG-26386]
+Action.c(33): Notify: Transaction "AS" ended with "Pass" status (Duration: 0.1371 Wasted Time: 0.0019).
+Ending action Action.
+Ending iteration 47.
+Starting iteration 48.
+Starting action Action.
+Action.c(3): Rendezvous point
+Action.c(4): Notify: Transaction "AS" started.
+Action.c(5): web_custom_request("AS") was successful, 278 body bytes, 66 header bytes  	[MsgId: MMSG-26386]
+Action.c(33): Notify: Transaction "AS" ended with "Stop" status (Duration: 0.2956 Wasted Time: 0.1065).
+Abort was called from an action.
+Ending Vuser...
+Starting action vuser_end.
+Ending action vuser_end.
+Vuser Terminated.

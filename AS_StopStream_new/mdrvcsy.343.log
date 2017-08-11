@@ -1,0 +1,7 @@
+Start auto log messages stack - Iteration 1.	[MsgId: MMSG-10545]
+Starting action Action.	[MsgId: MMSG-15919]
+Action.c(3): Notify: Transaction "AS_Stop" started.	[MsgId: MMSG-16999]
+Action.c(4): Error -26627: HTTP Status-Code=404 (Not Found) for "http://192.168.139.206:8091/skl-cloud/cloud/stream/stop"  	[MsgId: MERR-26627]
+End auto log messages stack.	[MsgId: MMSG-10544]
+
+

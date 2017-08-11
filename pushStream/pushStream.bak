@@ -1,0 +1,75 @@
+[General]
+Type=Multi
+AdditionalTypes=WS_SOAP,QTWeb
+ActiveTypes=WS_SOAP
+GenerateTypes=WS_SOAP
+RecordedProtocols=
+DefaultCfg=default.cfg
+AppName=
+BuildTarget=
+ParamRightBrace=}
+ParamLeftBrace={
+NewFunctionHeader=1
+LastActiveAction=Action
+CorrInfoReportDir=result1
+LastResultDir=result1
+DevelopTool=Vugen
+ActionLogicExt=action_logic
+MajorVersion=11
+MinorVersion=0
+ParameterFile=IPC≤¢∑¢«Î«Û.prm
+GlobalParameterFile=
+RunType=cci
+LastModifyVer=11.0.0.0
+AddOnName=SOA
+AddOnVersion=1.0
+[TransactionsOrder]
+Order="get11"
+[Actions]
+vuser_init=vuser_init.c
+Action=Action.c
+vuser_end=vuser_end.c
+[ProtocolsVersion]
+QTWeb=11.0.0.0
+WS_SOAP=11.0.0.0
+[RunLogicFiles]
+Default Profile=default.usp
+[ParameterSimulation]
+NumVusers=1
+IsDurationIndefinite=0
+NumIterationsUntilCompletion=256
+IterationFromRTS=0
+NumIterationIndefinitely=2
+[StateManagement]
+1=1
+5=1
+6=1
+9=1
+10=1
+11=0
+12=0
+17=1
+18=0
+20=1
+21=0
+CurrentState=20
+VuserStateHistory= 0 65536 65537 65552
+LastReplayStatus=2
+LastReplayErrorID1=-27796
+LastReplayErrorMsg1=Action.c(8): Error -27796: Failed to connect to server "192.168.139.207:9709": [10061] Connection refused  	[MsgId: MERR-27796]
+[Transactions]
+get11=
+[ExtraFiles]
+globals.h=
+[Recorded Actions]
+vuser_init=0
+Action=0
+vuser_end=0
+[Replayed Actions]
+vuser_init=1
+Action=1
+vuser_end=1
+[Modified Actions]
+vuser_init=1
+Action=1
+vuser_end=0

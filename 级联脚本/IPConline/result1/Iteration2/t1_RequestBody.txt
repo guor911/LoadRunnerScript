@@ -1,0 +1,4 @@
+"<ipc_command>\r\n"
+"<qId>ASDFGHJM</qId>\r\n"
+"<productModel>0201</productModel><connectStatus>0</connectStatus>\r\n"
+"</ipc_command>\r\n"

@@ -1,0 +1,19 @@
+Virtual User Script started at : 2016-10-24 17:30:47
+Starting action vuser_init.
+Web Turbo Replay of LoadRunner 11.0.0 for Windows 7; build 8859 (Aug 18 2010 20:14:31)  	[MsgId: MMSG-27143]
+Run Mode: HTML  	[MsgId: MMSG-26000]
+Run-Time Settings file: "D:\1. 项目\3.Cloud云项目\云性能\LR云性能脚本\LS\\default.cfg"  	[MsgId: MMSG-27141]
+Ending action vuser_init.
+Running Vuser...
+Starting iteration 1.
+Starting action Action.
+Action.c(3): Rendezvous point
+Action.c(4): Notify: Transaction "LS" started.
+Action.c(5): web_custom_request("LS") was successful, 281 body bytes, 66 header bytes  	[MsgId: MMSG-26386]
+Action.c(35): Notify: Transaction "LS" ended with "Pass" status (Duration: 0.6855 Wasted Time: 0.5010).
+Ending action Action.
+Ending iteration 1.
+Ending Vuser...
+Starting action vuser_end.
+Ending action vuser_end.
+Vuser Terminated.

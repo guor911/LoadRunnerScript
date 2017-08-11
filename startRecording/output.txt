@@ -1,0 +1,19 @@
+Virtual User Script started at : 2016-10-24 17:08:24
+Starting action vuser_init.
+Web Turbo Replay of LoadRunner 11.0.0 for Windows 7; build 8859 (Aug 18 2010 20:14:31)  	[MsgId: MMSG-27143]
+Run Mode: HTML  	[MsgId: MMSG-26000]
+Run-Time Settings file: "D:\1. 项目\3.Cloud云项目\云性能\LR云性能脚本\startRecording\\default.cfg"  	[MsgId: MMSG-27141]
+Ending action vuser_init.
+Running Vuser...
+Starting iteration 1.
+Starting action Action.
+Action.c(3): Notify: Transaction "startrecord" started.
+Action.c(4): web_custom_request("record") was successful, 39 body bytes, 65 header bytes  	[MsgId: MMSG-26386]
+0000000000000
+Action.c(25): Notify: Transaction "startrecord" ended with "Pass" status (Duration: 14.6201 Wasted Time: 14.4756).
+Ending action Action.
+Ending iteration 1.
+Ending Vuser...
+Starting action vuser_end.
+Ending action vuser_end.
+Vuser Terminated.

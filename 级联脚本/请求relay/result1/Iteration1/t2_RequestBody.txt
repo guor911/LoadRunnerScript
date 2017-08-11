@@ -1,0 +1,7 @@
+"<?xml version="1.0" encoding="UTF-8" ?>\r\n"
+"<play>\r\n"
+"<action>1</action>\r\n"
+"<uid>001</uid>\r\n"
+"<url>rtmp://192.168.139.208:1935/live/AAAAAAAA_MAIN.stream?param=0_AAAAAAAA_dd542d55-1104-451f"
+"-9784-ca2fbe3723eb</url>\r\n"
+"</play>\r\n"

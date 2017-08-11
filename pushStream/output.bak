@@ -1,0 +1,18 @@
+Virtual User Script started at : 2016-11-30 14:48:26
+Starting action vuser_init.
+Ending action vuser_init.
+Running Vuser...
+Starting iteration 1.
+Starting action Action.
+Action.c(4): Notify: Transaction "get11" started.
+Action.c(5): web_disable_keep_alive was successful  	[MsgId: MMSG-26392]
+Action.c(8): Error -27796: Failed to connect to server "192.168.139.207:9709": [10061] Connection refused  	[MsgId: MERR-27796]
+Action.c(8): Warning -26000: Empty or no response for URL="http://192.168.139.207:9709/skl-cloud/cloud/stream/control"  	[MsgId: MWAR-26000]
+Action.c(8): web_custom_request("get110") highest severity level was "ERROR", 0 body bytes, 0 header bytes  	[MsgId: MMSG-26388]
+Action.c(8): Notify: Transaction "get11" ended with "Fail" status (Duration: 1.9139 Wasted Time: 0.6604).
+Ending action Action.
+Ending iteration 1.
+Ending Vuser...
+Starting action vuser_end.
+Ending action vuser_end.
+Vuser Terminated.

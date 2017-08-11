@@ -1,0 +1,18 @@
+Virtual User Script started at : 2016-11-18 12:14:39
+Starting action vuser_init.
+Web Turbo Replay of LoadRunner 11.0.0 for Windows 2008 R2; build 8859 (Aug 18 2010 20:14:31)  	[MsgId: MMSG-27143]
+Run Mode: HTML  	[MsgId: MMSG-26000]
+Run-Time Settings file: "G:\guorui_STE\AS_Control_new\\default.cfg"  	[MsgId: MMSG-27141]
+Ending action vuser_init.
+Running Vuser...
+Starting iteration 1.
+Starting action Action.
+Action.c(4): Notify: Transaction "AS" started.
+Action.c(5): web_custom_request("AS") was successful, 278 body bytes, 66 header bytes  	[MsgId: MMSG-26386]
+Action.c(40): Notify: Transaction "AS" ended with "Pass" status (Duration: 6.2785 Wasted Time: 6.2057).
+Ending action Action.
+Ending iteration 1.
+Ending Vuser...
+Starting action vuser_end.
+Ending action vuser_end.
+Vuser Terminated.

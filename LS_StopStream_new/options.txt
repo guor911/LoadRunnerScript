@@ -1,0 +1,9 @@
+-+
+-DCCI
+-D_IDA_XL
+-DWINNT
+-IG:\guorui_STE\LS_StopStream_new
+-ID:\Program Files (x86)\HP\LoadRunner\include
+-eg:\guorui_ste\ls_stopstream_new\\logfile.log
+g:\guorui_ste\ls_stopstream_new\\combined_LS_StopStream_new.c
+g:\guorui_ste\ls_stopstream_new\\pre_cci.c

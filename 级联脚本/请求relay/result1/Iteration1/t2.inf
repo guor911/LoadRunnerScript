@@ -1,0 +1,12 @@
+[t2]
+SnapshotXmlFile=snapshot_2.xml
+ContentType=text/html
+StepName=Custom Request: getStreamTool
+Total=1
+FileName1=t2.html
+RequestHeaderFile=t2_RequestHeader.txt
+ResponseHeaderFile=t2_ResponseHeader.txt
+RequestBodyFile=t2_RequestBody.txt
+URL1=http://192.168.139.208:9000/skl-cloud/cloud/avr/play/OnPlay
+[AdditionalInfo]
+IsIgnorable=1

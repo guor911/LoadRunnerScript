@@ -1,0 +1,9 @@
+-+
+-DCCI
+-D_IDA_XL
+-DWINNT
+-IG:\guorui_STE\setSteamConfig_capture_new
+-ID:\Program Files (x86)\HP\LoadRunner\include
+-eg:\guorui_ste\setsteamconfig_capture_new\\logfile.log
+g:\guorui_ste\setsteamconfig_capture_new\\combined_setSteamConfig_capture_new.c
+g:\guorui_ste\setsteamconfig_capture_new\\pre_cci.c

@@ -1,0 +1,9 @@
+-+
+-DCCI
+-D_IDA_XL
+-DWINNT
+-IG:\guorui_STE\AS-LS-Wowza
+-ID:\HP\LoadRunner\include
+-eg:\guorui_ste\as-ls-wowza\\logfile.log
+g:\guorui_ste\as-ls-wowza\\combined_AS-LS-Wowza.c
+g:\guorui_ste\as-ls-wowza\\pre_cci.c
